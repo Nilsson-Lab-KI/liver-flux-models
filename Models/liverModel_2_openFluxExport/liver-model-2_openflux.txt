@@ -1,19 +1,29 @@
 RxnID	rxnEq	rxnCTrans	rates	rxnType	basis	deviation
-2mop_IN	2mop_i = 2mop_m	abcd = abcd		F		
-ac_IN	ac_i = ac_c	ab = ab		F		
-ala-L_IN	ala-L_i = ala-L_c	abc = abc		F		
-arg-L_IN	arg-L_i = arg-L_c	abcdef = abcdef		F		
-asp-L_IN	asp-L_i = asp-L_c	abcd = abcd		F		
-co2_IN	co2_i = co2_c	a = a		F		
-glc-D_IN	glc-D_i = glc-D_c	abcdef = abcdef		F		
-gln-L_IN	gln-L_i = gln-L_c	abcde = abcde		F		
-glucys_IN	glucys_i = glucys_c	abcdefgh = abcdefgh		F		
-gly_IN	gly_i = gly_c	ab = ab		F		
-glyc_IN	glyc_i = glyc_c	abc = abc		F		
-glycogen_IN	glycogen_i = glycogen_c	abcdef = abcdef		F		
-prot_ala_IN	prot_ala_i = prot_ala_c	abc = abc		F		
-prot_arg_IN	prot_arg_i = prot_arg_c	abcdef = abcdef		F		
-ser-L_IN	ser-L_i = ser-L_c	abc = abc		F		
+2mop_IN	2mop_i = 2mop_m	abcd = abcd		B		
+ac_IN	ac_i = ac_c	ab = ab		B		
+ala-L_IN	ala-L_i = ala-L_c	abc = abc		B		
+arg-L_IN	arg-L_i = arg-L_c	abcdef = abcdef		B		
+asp-L_IN	asp-L_i = asp-L_c	abcd = abcd		B		
+co2_IN	co2_i = co2_c	a = a		B		
+energy_IN	energy_i = energy_c	X = X		B		
+glc-D_IN	glc-D_i = glc-D_c	abcdef = abcdef		B		
+gln-L_IN	gln-L_i = gln-L_c	abcde = abcde		B		
+glucys_IN	glucys_i = glucys_c	abcdefgh = abcdefgh		B		
+glu-L_OUT	glu-L_c = glu-L_o	abcde = abcde		B		
+gly_IN	gly_i = gly_c	ab = ab		B		
+glyc_IN	glyc_i = glyc_c	abc = abc		B		
+glycogen_IN	glycogen_i = glycogen_c	abcdef = abcdef		B		
+gthrd_OUT	gthrd_c = gthrd_o	abcdefghij = abcdefghij		B		
+h2o_IN	h2o_i = h2o_c	X = X		B		
+h_IN	h_i = h_c	X = X		B		
+lac-L_OUT	lac-L_c = lac-L_o	abc = abc		B		
+nh4_IN	nh4_i = nh4_c	X = X		B		
+o2_IN	o2_i = o2_c	X = X		B		
+pi_IN	pi_i = pi_c	X = X		B		
+prot_ala_IN	prot_ala_i = prot_ala_c	abc = abc		B		
+prot_arg_IN	prot_arg_i = prot_arg_c	abcdef = abcdef		B		
+ser-L_IN	ser-L_i = ser-L_c	abc = abc		B		
+urea_OUT	urea_c = urea_o	a = a		B		
 2AMACHYD	2amac_c + h2o_c = pyr_c + nh4_c	abc + X = abc + X		F		
 ACITL	cit_c + atp_c + coa_c = oaa_c + accoa_c + adp_c + pi_c	abcdef + X + X = afce + bd + X + X		F		
 ACOAHi	accoa_c + h2o_c = ac_c + coa_c + h_c	ab + X = ab + X + X		F		
@@ -35,7 +45,7 @@ ASPTA_R	glu-L_c + oaa_c = akg_c + asp-L_c	abcde + fghi = abcde + fghi		R
 ASPTAm	glu-L_m + oaa_m = akg_m + asp-L_m	abcde + fghi = abcde + fghi		FR		
 ASPTAm_R	akg_m + asp-L_m = glu-L_m + oaa_m	abcde + fghi = abcde + fghi		R		
 ASPtm	asp-L_m = asp-L_c	abcd = abcd		F		
-ATPS4m	adp_m + h_ims_m + h_ims_m + h_ims_m + h_ims_m + pi_m = atp_m + h_m + h_m + h_m + h2o_m	X + X + X + X + X + X = X + X + X + X + X		F		
+ATPS4m	adp_m + h_ims_m + h_ims_m + h_ims_m + h_ims_m + pi_m = atp_m + h2o_m + h_m + h_m + h_m	X + X + X + X + X + X = X + X + X + X + X		F		
 ATPtm	adp_c + atp_m = adp_m + atp_c	X + X = X + X		FR		
 ATPtm_R	adp_m + atp_c = adp_c + atp_m	X + X = X + X		R		
 CBPSam	hco3_m + atp_m + atp_m + nh4_m = cbp_m + adp_m + adp_m + h_m + h_m + pi_m	a + X + X + X = a + X + X + X + X + X		F		
@@ -129,108 +139,85 @@ SUCD1m	succ_m + q10_m = fum_m + q10h2_m	abcd + X = badc + X		F
 SUCOASm	succoa_m + adp_m + pi_m = succ_m + atp_m + coa_m	abcd + X + X = abcd + X + X		F		
 TPI	dhap_c = g3p_c	abc = abc		FR		
 TPI_R	g3p_c = dhap_c	abc = abc		R		
-						
-##	excludedMetabolites					
-#	2mop_i					
-#	ac_i					
-#	adp_c					
-#	adp_m					
-#	ala-L_i					
-#	amp_c					
-#	arg-L_i					
-#	asp-L_i					
-#	atp_c					
-#	atp_m					
-#	co2_i					
-#	coa_c					
-#	coa_m					
-#	crn_c					
-#	crn_m					
-#	energy_c					
-#	energy_i					
-#	ficytC_m					
-#	focytC_m					
-#	gdp_c					
-#	glc-D_i					
-#	gln-L_i					
-#	glucys_i					
-#	gly_i					
-#	glyc_i					
-#	glycogen_i					
-#	gtp_c					
-#	h_c					
-#	h_i					
-#	h_m					
-#	h2o_c					
-#	h2o_r					
-#	h2o_i					
-#	h2o_m					
-#	h_ims_m					
-#	nad_c					
-#	nad_m					
-#	nadh_c					
-#	nadh_m					
-#	nh4_c					
-#	nh4_i					
-#	nh4_m					
-#	o2_c					
-#	o2_i					
-#	o2_m					
-#	pi_c					
-#	pi_r					
-#	pi_i					
-#	pi_m					
-#	ppi_c					
-#	prot_ala_i					
-#	prot_arg_i					
-#	q10_m					
-#	q10h2_m					
-#	ser-L_i					
-#	thf_c					
-#	urea_c					
-#	gthrd_c					
-						
-##	simulatedMDVs					
-#	acrn_c#11					
-#	acrn_m#11					
-#	ala-L_c#111					
-#	arg-L_c#111111					
-#	asp-L_c#1111					
-#	asp-L_m#1111					
-#	citr-L_c#111111					
-#	citr-L_m#111111					
-#	g3p_c#111					
-#	glc-D_c#111111					
-#	glc-D_r#111111					
-#	gln-L_c#11111					
-#	gln-L_m#11111					
-#	glu-L_c#11111					
-#	glu-L_m#11111					
-#	gly_c#11					
-#	glyc3p_c#111					
-#	mal-L_c#1111					
-#	mal-L_m#1111					
-#	orn_c#11111					
-#	orn_m#11111					
-#	ser-L_c#111					
-						
-##	inputSubstrates					
-#	2mop_i					
-#	ac_i					
-#	ala-L_i					
-#	arg-L_i					
-#	asp-L_i					
-#	co2_i					
-#	glc-D_i					
-#	gln-L_i					
-#	glucys_i					
-#	gly_i					
-#	glyc_i					
-#	glycogen_i					
-#	prot_ala_i					
-#	prot_arg_i					
-#	ser-L_i					
-						
-##	measurements					
-						
-##	error					
+
+##	excludedMetabolites
+#	2mop_i
+#	ac_i
+#	ala-L_i
+#	arg-L_i
+#	asp-L_i
+#	co2_i
+#	energy_i
+#	glc-D_i
+#	gln-L_i
+#	glucys_i
+#	gly_i
+#	glyc_i
+#	glycogen_i
+#	h2o_i
+#	h_i
+#	nh4_i
+#	o2_i
+#	pi_i
+#	prot_ala_i
+#	prot_arg_i
+#	ser-L_i
+#	arg-L_o
+#	asp-L_o
+#	co2_o
+#	energy_o
+#	glc-D_o
+#	glu-L_o
+#	gthrd_o
+#	h2o_o
+#	h_o
+#	lac-L_o
+#	nh4_o
+#	pi_o
+#	ser-L_o
+#	urea_o
+
+##	simulatedMDVs
+#	acrn_c#11
+#	acrn_m#11
+#	ala-L_c#111
+#	arg-L_c#111111
+#	asp-L_c#1111
+#	asp-L_m#1111
+#	citr-L_c#111111
+#	citr-L_m#111111
+#	g3p_c#111
+#	glc-D_c#111111
+#	glc-D_r#111111
+#	gln-L_c#11111
+#	gln-L_m#11111
+#	glu-L_c#11111
+#	glu-L_m#11111
+#	gly_c#11
+#	glyc3p_c#111
+#	mal-L_c#1111
+#	mal-L_m#1111
+#	orn_c#11111
+#	orn_m#11111
+#	ser-L_c#111
+
+##	inputSubstrates
+#	2mop_i
+#	ac_i
+#	ala-L_i
+#	arg-L_i
+#	asp-L_i
+#	co2_i
+#	glc-D_i
+#	gln-L_i
+#	glucys_i
+#	gly_i
+#	glyc_i
+#	glycogen_i
+#	prot_ala_i
+#	prot_arg_i
+#	ser-L_i
+
+##	measurements
+
+##	error
