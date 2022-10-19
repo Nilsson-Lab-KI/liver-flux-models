@@ -35,14 +35,14 @@ ser-L_IN	ser-L_i = ser-L_c	abc = abc		F
 ser-L_OUT	ser-L_c = ser-L_o	abc = abc		B		
 urea_OUT	urea_c = urea_o	a = a		B		
 2AMACHYD	2amac_c + h2o_c = pyr_c + nh4_c	abc + X = abc + X		F		
-ACITL	cit_c + atp_c + coa_c = oaa_c + accoa_c + adp_c + pi_c	abcdef + X + X = afce + bd + X + X		F		
+ACITL	cit_c + atp_c + coa_c = accoa_c + oaa_c + adp_c + pi_c	abcdef + X + X = bd + afce + X + X		F		
 ACOAHi	accoa_c + h2o_c = ac_c + coa_c + h_c	ab + X = ab + X + X		F		
 ACONTm	cit_m = icit_m	abcdef = bfdaec		FR		
 ACONTm_R	icit_m = cit_m	abcdef = dafceb		R		
 ACRNtm	acrn_c = acrn_m	ab = ab		F		
 ACS	ac_c + atp_c + coa_c = accoa_c + amp_c + ppi_c	ab + X + X = ab + X + X		F		
 ADK1	amp_c + atp_c = adp_c + adp_c	X + X = X + X		F		
-AKGDm	akg_m + coa_m + nad_m = succoa_m + co2_m + nadh_m	abcde + X + X = badc + e + X		FR		
+AKGDm	akg_m + coa_m + nad_m = co2_m + succoa_m + nadh_m	abcde + X + X = e + badc + X		FR		
 AKGDm_R	co2_m + succoa_m + nadh_m = akg_m + coa_m + nad_m	a + bcde + X = cbeda + X + X		R		
 AKGtm	akg_c = akg_m	abcde = abcde		FR		
 AKGtm_R	akg_m = akg_c	abcde = abcde		R		
@@ -71,7 +71,7 @@ CYOOm	focytC_m + focytC_m + focytC_m + focytC_m + h_m + h_m + h_m + h_m + h_m + 
 CYOR-u10m	ficytC_m + ficytC_m + h_m + h_m + q10h2_m = focytC_m + focytC_m + h_ims_m + h_ims_m + h_ims_m + h_ims_m + q10_m	X + X + X + X + X = X + X + X + X + X + X + X		F		
 ENO	2pg_c = pep_c + h2o_c	abc = abc + X		FR		
 ENO_R	pep_c + h2o_c = 2pg_c	abc + X = abc		R		
-FBA	fdp_c = g3p_c + dhap_c	abcdef = dac + ebf		FR		
+FBA	fdp_c = dhap_c + g3p_c	abcdef = ebf + dac		FR		
 FBA_R	dhap_c + g3p_c = fdp_c	abc + def = ebfdac		R		
 FBP	fdp_c + h2o_c = f6p_c + pi_c	abcdef + X = abcdef + X		F		
 FUMm	fum_m + h2o_m = mal-L_m	abcd + X = abcd		F		
@@ -82,7 +82,7 @@ G6PPer	g6p_r + h2o_r = glc-D_r + pi_r	abcdef + X = abcdef + X		F
 G6Pter	g6p_c = g6p_r	abcdef = abcdef		F		
 GAPD	g3p_c + nad_c + pi_c = 13dpg_c + h_c + nadh_c	abc + X + X = bca + X + X		FR		
 GAPD_R	13dpg_c + h_c + nadh_c = g3p_c + nad_c + pi_c	abc + X + X = cab + X + X		R		
-GHMT2r	ser-L_c + thf_c = mlthf_c + gly_c + h2o_c	abc + X = a + bc + X		FR		
+GHMT2r	ser-L_c + thf_c = gly_c + mlthf_c + h2o_c	abc + X = bc + a + X		FR		
 GHMT2r_R	gly_c + mlthf_c + h2o_c = ser-L_c + thf_c	ab + c + X = cab + X		R		
 GLCter	glc-D_r = glc-D_c	abcdef = abcdef		F		
 GLNtm	gln-L_c = gln-L_m	abcde = abcde		F		
@@ -112,7 +112,7 @@ MDHm	mal-L_m + nad_m = oaa_m + h_m + nadh_m	abcd + X = abcd + X + X		FR
 MDHm_R	oaa_m + h_m + nadh_m = mal-L_m + nad_m	abcd + X + X = abcd + X		R		
 MMEm	mmcoa-S_m = mmcoa-R_m	abcd = abcd		F		
 MMMm	mmcoa-R_m = succoa_m	abcd = bacd		F		
-MMSAD1m	2mop_m + coa_m + nad_m = ppcoa_m + co2_m + nadh_m	abcd + X + X = acb + d + X		F		
+MMSAD1m	2mop_m + coa_m + nad_m = co2_m + ppcoa_m + nadh_m	abcd + X + X = d + acb + X		F		
 NADH2-u10m	h_m + h_m + h_m + h_m + h_m + nadh_m + q10_m = h_ims_m + h_ims_m + h_ims_m + h_ims_m + nad_m + q10h2_m	X + X + X + X + X + X + X = X + X + X + X + X + X		F		
 NADH_REDOX	nadh_c = h_c + nad_c	X = X + X		F		
 NDPK1	atp_c + gdp_c = adp_c + gtp_c	X + X = X + X		F		
@@ -123,7 +123,7 @@ OCBTm	cbp_m + orn_m = citr-L_m + h_m + pi_m	a + bcdef = bcdefa + X + X		F
 ORNt4m	citr-L_m + orn_c = citr-L_c + orn_m	abcdef + ghijk = abcdef + ghijk		F		
 PCm	hco3_m + pyr_m + atp_m = oaa_m + adp_m + h_m + pi_m	a + bcd + X = bcad + X + X + X		F		
 PDHm	pyr_m + coa_m + nad_m = accoa_m + co2_m + nadh_m	abc + X + X = ab + c + X		F		
-PEPCK	oaa_c + gtp_c = pep_c + co2_c + gdp_c	abcd + X = abd + c + X		F		
+PEPCK	oaa_c + gtp_c = co2_c + pep_c + gdp_c	abcd + X = c + abd + X		F		
 PFK	f6p_c + atp_c = fdp_c + adp_c + h_c	abcdef + X = abcdef + X + X		F		
 PGCD	3pg_c + nad_c = 3php_c + h_c + nadh_c	abc + X = abc + X + X		F		
 PGI	g6p_c = f6p_c	abcdef = afbcde		FR		
@@ -139,7 +139,7 @@ PPA	h2o_c + ppi_c = h_c + pi_c + pi_c	X + X = X + X + X		F
 PPCOACm	hco3_m + ppcoa_m + atp_m = mmcoa-S_m + adp_m + h_m + pi_m	a + bcd + X = bcad + X + X + X		F		
 PROTDEG_ALA	prot_ala_c = ala-L_c	abc = abc		F		
 PROTDEG_ARG	prot_arg_c = arg-L_c	abcdef = abcdef		F		
-PSERT	3php_c + glu-L_c = pser-L_c + akg_c	abc + defgh = abc + defgh		F		
+PSERT	3php_c + glu-L_c = akg_c + pser-L_c	abc + defgh = defgh + abc		F		
 PSP_L	pser-L_c + h2o_c = ser-L_c + pi_c	abc + X = abc + X		F		
 PYK	pep_c + adp_c + h_c = pyr_c + atp_c	abc + X + X = abc + X		F		
 PYRt2m	pyr_c = pyr_m	abc = abc		FR		
