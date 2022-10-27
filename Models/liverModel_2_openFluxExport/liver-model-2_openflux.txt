@@ -190,6 +190,8 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 ##	simulatedMDVs
 #	acrn_c#11
 #	acrn_m#11
+#	akg_m#11111
+#	akg_c#11111
 #	ala-L_c#111
 #	arg-L_c#111111
 #	asp-L_c#1111
@@ -197,6 +199,8 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	citr-L_c#111111
 #	citr-L_m#111111
 #	g3p_c#111
+#	g6p_c#111111
+#	g6p_r#111111
 #	glc-D_c#111111
 #	glc-D_r#111111
 #	gln-L_c#11111
@@ -210,6 +214,7 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	orn_c#11111
 #	orn_m#11111
 #	ser-L_c#111
+#	succ_m#1111
 
 ##	inputSubstrates
 #	2mop_i
