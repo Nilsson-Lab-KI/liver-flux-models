@@ -11,13 +11,13 @@ co2_OUT	co2_c = co2_o	a = a		B
 energy_IN	energy_i = energy_c	X = X		F		
 energy_OUT	energy_c = energy_o	X = X		B		
 glc-D_IN	glc-D_i = glc-D_c	abcdef = abcdef		F		
-glc-D_OUT	glc-D_c = glc-D_o	abcdef = abcdef		B		
+glc-D_OUT	glc-D_r = glc-D_o	abcdef = abcdef		B		
 gln-L_IN	gln-L_i = gln-L_c	abcde = abcde		F		
 glucys_IN	glucys_i = glucys_c	abcdefgh = abcdefgh		F		
 glu-L_OUT	glu-L_c = glu-L_o	abcde = abcde		B		
 gly_IN	gly_i = gly_c	ab = ab		F		
 glyc_IN	glyc_i = glyc_c	abc = abc		F		
-glycogen_IN	glycogen_i = glycogen_r	X = X		F		
+glycogen_IN	glycogen_i = glycogen_r	abcdef = abcdef		F		
 gthrd_OUT	gthrd_c = gthrd_o	abcdefghij = abcdefghij		B		
 h2o_IN	h2o_i = h2o_c	X = X		F		
 h2o_OUT	h2o_c = h2o_o	X = X		B		
@@ -92,7 +92,7 @@ GLUNm	gln-L_m + h2o_m = glu-L_m + nh4_m	abcde + X = abcde + X		FR
 GLUNm_R	glu-L_m + nh4_m = gln-L_m + h2o_m	abcde + X = abcde + X		R		
 GLUt2m	glu-L_c = glu-L_m	abcde = abcde		FR		
 GLUt2m_R	glu-L_m = glu-L_c	abcde = abcde		R		
-GLYCOGEN_BREAKer	glycogen_r + pi_r = g1p_r	X + X = X		F		
+GLYCOGEN_BREAKer	glycogen_r + pi_r = g1p_r	abcdef + X = fedcba		F		
 GLYK	glyc_c + atp_c = glyc3p_c + adp_c + h_c	abc + X = bac + X + X		F		
 GTHS	glucys_c + gly_c + atp_c = gthrd_c + adp_c + h_c + pi_c	abcdefgh + ij + X = abicdefjhg + X + X + X		F		
 H2Oter	h2o_c = h2o_r	X = X		F		
@@ -132,7 +132,7 @@ PGK	13dpg_c + adp_c = 3pg_c + atp_c	abc + X = abc + X		FR
 PGK_R	3pg_c + atp_c = 13dpg_c + adp_c	abc + X = abc + X		R		
 PGM	3pg_c = 2pg_c	abc = abc		FR		
 PGM_R	2pg_c = 3pg_c	abc = abc		R		
-PGMTer	g1p_r = g6p_r	X = X		F		
+PGMTer	g1p_r = g6p_r	abcdef = abcdef		F		
 PIt2m	pi_c = pi_m	X = X		F		
 PIter	pi_r = pi_c	X = X		F		
 PPA	h2o_c + ppi_c = h_c + pi_c + pi_c	X + X = X + X + X		F		
@@ -223,6 +223,7 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	glucys_i
 #	gly_i
 #	glyc_i
+#	glycogen_i
 #	prot_ala_i
 #	prot_arg_i
 #	ser-L_i
