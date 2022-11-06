@@ -17,6 +17,7 @@ glucys_IN	glucys_i = glucys_c	abcdefgh = abcdefgh		F
 glu-L_OUT	glu-L_c = glu-L_o	abcde = abcde		B		
 gly_IN	gly_i = gly_c	ab = ab		F		
 glyc_IN	glyc_i = glyc_c	abc = abc		F		
+glyc_OUT	glyc_c = glyc_o	abc = abc		B		
 glycogen_IN	glycogen_i = glycogen_r	abcdef = abcdef		F		
 gthrd_OUT	gthrd_c = gthrd_o	abcdefghij = abcdefghij		B		
 h2o_IN	h2o_i = h2o_c	X = X		F		
@@ -92,8 +93,8 @@ GLUNm	gln-L_m + h2o_m = glu-L_m + nh4_m	abcde + X = abcde + X		FR
 GLUNm_R	glu-L_m + nh4_m = gln-L_m + h2o_m	abcde + X = abcde + X		R		
 GLUt2m	glu-L_c = glu-L_m	abcde = abcde		FR		
 GLUt2m_R	glu-L_m = glu-L_c	abcde = abcde		R		
-GLYC_DEMAND	glyc3p_c = pi_c	X = X		F		
 GLYCOGEN_BREAKer	glycogen_r + pi_r = g1p_r	abcdef + X = fedcba		F		
+GLYCPH	glyc3p_c + h2o_c = glyc_c + pi_c	abc + X = bac + X		F		
 GLYK	glyc_c + atp_c = glyc3p_c + adp_c + h_c	abc + X = bac + X + X		F		
 GTHS	glucys_c + gly_c + atp_c = gthrd_c + adp_c + h_c + pi_c	abcdefgh + ij + X = abicdefjhg + X + X + X		F		
 H2Oter	h2o_c = h2o_r	X = X		F		
@@ -179,6 +180,7 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	energy_o
 #	glc-D_o
 #	glu-L_o
+#	glyc_o
 #	gthrd_o
 #	h2o_o
 #	h_o
