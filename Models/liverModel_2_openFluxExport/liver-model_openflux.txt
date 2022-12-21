@@ -152,7 +152,7 @@ SUCOASm	succoa_m + adp_m + pi_m = 0.5 succ_m + 0.5 succ_m + atp_m + coa_m	abcd +
 TPI	dhap_c = g3p_c	abc = abc		FR		
 TPI_R	g3p_c = dhap_c	abc = abc		R		
 ARG_tmL	arg-L_l = arg-L_c	abcdef = abcdef		F		
-AER_OUT2	arg-L_l = arg-L_o	abcdef = abcdef		F		
+ARG_OUT2	arg-L_l = arg-L_o	abcdef = abcdef		F		
 						
 ##	excludedMetabolites					
 #	2mop_i					
@@ -192,9 +192,7 @@ AER_OUT2	arg-L_l = arg-L_o	abcdef = abcdef		F
 #	urea_o					
 #	glyc_o					
 						
-##	simulatedMDVs					
-#	acrn_c#11					
-#	acrn_m#11					
+##	simulatedMDVs									
 #	akg_m#11111					
 #	akg_c#11111					
 #	ala-L_c#111					
@@ -205,8 +203,7 @@ AER_OUT2	arg-L_l = arg-L_o	abcdef = abcdef		F
 #	citr-L_c#111111					
 #	citr-L_m#111111					
 #	f6p_c#111111					
-#	g1p_r#111111					
-#	g3p_c#111					
+#	g1p_r#111111										
 #	g6p_c#111111					
 #	g6p_r#111111					
 #	glc-D_c#111111					
@@ -221,8 +218,7 @@ AER_OUT2	arg-L_l = arg-L_o	abcdef = abcdef		F
 #	mal-L_m#1111					
 #	orn_c#11111					
 #	orn_m#11111					
-#	ser-L_c#111					
-#	succ_m#1111					
+#	ser-L_c#111									
 						
 ##	inputSubstrates					
 #	2mop_i					
