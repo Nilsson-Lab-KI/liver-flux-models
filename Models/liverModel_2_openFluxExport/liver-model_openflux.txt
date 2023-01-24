@@ -152,7 +152,6 @@ SUCOASm	succoa_m + adp_m + pi_m = 0.5 succ_m + 0.5 succ_m + atp_m + coa_m	abcd +
 TPI	dhap_c = g3p_c	abc = abc		FR		
 TPI_R	g3p_c = dhap_c	abc = abc		R		
 ARG_tmL	arg-L_l = arg-L_c	abcdef = abcdef		F		
-ARG_OUT2	arg-L_l = arg-L_o	abcdef = abcdef		F		
 						
 ##	excludedMetabolites					
 #	2mop_i					
