@@ -1,5 +1,4 @@
 RxnID	rxnEq	rxnCTrans	rates	rxnType	basis	deviation
-2mop_IN	2mop_i = 2mop_m	abcd = abcd		F		
 ac_IN	ac_i = ac_c	ab = ab		F		
 ala-L_IN	ala-L_i = ala-L_c	abc = abc		F		
 arg-L_IN	arg-L_i = arg-L_c	abcdef = abcdef		F		
@@ -112,9 +111,6 @@ MALtm	mal-L_c = mal-L_m	abcd = abcd		F
 MDH	oaa_c + h_c + nadh_c = mal-L_c + nad_c	abcd + X + X = abcd + X		F		
 MDHm	mal-L_m + nad_m = oaa_m + h_m + nadh_m	abcd + X = abcd + X + X		FR		
 MDHm_R	oaa_m + h_m + nadh_m = mal-L_m + nad_m	abcd + X + X = abcd + X		R		
-MMEm	mmcoa-S_m = mmcoa-R_m	abcd = abcd		F		
-MMMm	mmcoa-R_m = succoa_m	abcd = bacd		F		
-MMSAD1m	2mop_m + coa_m + nad_m = co2_m + ppcoa_m + nadh_m	abcd + X + X = d + acb + X		F		
 NADH2-u10m	h_m + h_m + h_m + h_m + h_m + nadh_m + q10_m = h_ims_m + h_ims_m + h_ims_m + h_ims_m + nad_m + q10h2_m	X + X + X + X + X + X + X = X + X + X + X + X + X		F		
 NADH_REDOX	nadh_c = h_c + nad_c	X = X + X		F		
 NDPK1	atp_c + gdp_c = adp_c + gtp_c	X + X = X + X		F		
@@ -138,7 +134,6 @@ PGMTer	g1p_r = g6p_r	abcdef = abcdef		F
 PIt2m	pi_c = pi_m	X = X		F		
 PIter	pi_r = pi_c	X = X		F		
 PPA	h2o_c + ppi_c = h_c + pi_c + pi_c	X + X = X + X + X		F		
-PPCOACm	hco3_m + ppcoa_m + atp_m = mmcoa-S_m + adp_m + h_m + pi_m	a + bcd + X = bcad + X + X + X		F		
 PROTDEG_ALA	prot_ala_c = ala-L_c	abc = abc		F		
 PROTDEG_ARG	prot_arg_l = arg-L_l	abcdef = abcdef		F		
 PSERT	3php_c + glu-L_c = akg_c + pser-L_c	abc + defgh = defgh + abc		F		
@@ -154,7 +149,6 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 ARG_tmL	arg-L_l = arg-L_c	abcdef = abcdef		F		
 						
 ##	excludedMetabolites					
-#	2mop_i					
 #	ac_i					
 #	ala-L_i					
 #	arg-L_i					
@@ -220,7 +214,6 @@ ARG_tmL	arg-L_l = arg-L_c	abcdef = abcdef		F
 #	ser-L_c#111									
 						
 ##	inputSubstrates					
-#	2mop_i					
 #	ac_i					
 #	ala-L_i					
 #	arg-L_i					
