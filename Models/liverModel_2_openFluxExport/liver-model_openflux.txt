@@ -3,7 +3,7 @@ RxnID	rxnEq	rxnCTrans	rates	rxnType	basis	deviation
 ac_IN	ac_i = ac_c	ab = ab		F		
 ala-L_IN	ala-L_i = ala-L_c	abc = abc		F		
 arg-L_IN	arg-L_i = arg-L_c	abcdef = abcdef		F		
-arg-L_OUT	arg-L_l = arg-L_o	abcdef = abcdef		B		
+arg-L_OUT	arg-L_c = arg-L_o	abcdef = abcdef		B		
 asp-L_IN	asp-L_i = asp-L_c	abcd = abcd		F		
 asp-L_OUT	asp-L_c = asp-L_o	abcd = abcd		B		
 co2_IN	co2_i = co2_c	a = a		F		
@@ -77,7 +77,7 @@ FBA_R	dhap_c + g3p_c = fdp_c	abc + def = ebfdac		R
 FBP	fdp_c + h2o_c = f6p_c + pi_c	abcdef + X = abcdef + X		F		
 FUMm	fum_m + h2o_m = mal-L_m	abcd + X = abcd		F		
 FUMtm	fum_c = 0.5 fum_m + 0.5 fum_m	abcd = 0.5 abcd + 0.5 badc		F		
-G3PD1	dhap_c + h_c + nadh_c = glyc3p_c + nad_c	abc + X + X = abc + X		F		
+G3PD1	dhap_c + nadh_c + h_c = glyc3p_c + nad_c	abc + X + X = abc + X		F		
 G6PPer	g6p_r + h2o_r = glc-D_r + pi_r	abcdef + X = abcdef + X		F		
 G6Pter	g6p_c = g6p_r	abcdef = abcdef		FR		
 G6Pter_R	g6p_r = g6p_c	abcdef = abcdef		R		
@@ -93,8 +93,8 @@ GLUNm	gln-L_m + h2o_m = glu-L_m + nh4_m	abcde + X = abcde + X		FR
 GLUNm_R	glu-L_m + nh4_m = gln-L_m + h2o_m	abcde + X = abcde + X		R		
 GLUt2m	glu-L_c = glu-L_m	abcde = abcde		FR		
 GLUt2m_R	glu-L_m = glu-L_c	abcde = abcde		R		
-GLYCOGEN_BREAKer	glycogen_r + pi_r = g1p_r	abcdef + X = fedcba		F		
-GLYCPH	glyc3p_c + h2o_c = glyc_c + pi_c	abc + X = bac + X		F		
+GLYCOGEN_BREAK	glycogen_r + pi_c = g1p_r	abcdef + X = fedcba		F		
+GLYCPH	glyc3p_c + h2o_c = glyc_c + pi_c	abc + X = abc + X 		F		
 GLYK	glyc_c + atp_c = glyc3p_c + adp_c + h_c	abc + X = bac + X + X		F		
 GTHS	glucys_c + gly_c + atp_c = gthrd_c + adp_c + h_c + pi_c	abcdefgh + ij + X = abicdefjhg + X + X + X		F		
 H2Oter	h2o_c = h2o_r	X = X		F		
@@ -151,8 +151,8 @@ SUCD1m	succ_m + q10_m = 0.5 fum_m + 0.5 fum_m + q10h2_m	abcd + X = 0.5 badc + 0.
 SUCOASm	succoa_m + adp_m + pi_m = 0.5 succ_m + 0.5 succ_m + atp_m + coa_m	abcd + X + X = 0.5 badc + 0.5 abcd + X + X		F		
 TPI	dhap_c = g3p_c	abc = abc		FR		
 TPI_R	g3p_c = dhap_c	abc = abc		R		
-ARG_tmL	arg-L_c = arg-L_l	abcdef = abcdef		FR		
-ARG_tmL_R	arg-L_l = arg-L_c	abcdef = abcdef		R				
+ARG_tmL	arg-L_l = arg-L_c	abcdef = abcdef		F		
+ARG_OUT2	arg-L_l = arg-L_o	abcdef = abcdef		F		
 						
 ##	excludedMetabolites					
 #	2mop_i					
@@ -190,11 +190,9 @@ ARG_tmL_R	arg-L_l = arg-L_c	abcdef = abcdef		R
 #	pi_o					
 #	ser-L_o					
 #	urea_o					
-#	arg-L_o					
+#	glyc_o					
 						
-##	simulatedMDVs					
-#	acrn_c#11					
-#	acrn_m#11					
+##	simulatedMDVs									
 #	akg_m#11111					
 #	akg_c#11111					
 #	ala-L_c#111					
@@ -204,7 +202,8 @@ ARG_tmL_R	arg-L_l = arg-L_c	abcdef = abcdef		R
 #	asp-L_m#1111					
 #	citr-L_c#111111					
 #	citr-L_m#111111					
-#	g3p_c#111					
+#	f6p_c#111111					
+#	g1p_r#111111										
 #	g6p_c#111111					
 #	g6p_r#111111					
 #	glc-D_c#111111					
@@ -219,8 +218,7 @@ ARG_tmL_R	arg-L_l = arg-L_c	abcdef = abcdef		R
 #	mal-L_m#1111					
 #	orn_c#11111					
 #	orn_m#11111					
-#	ser-L_c#111					
-#	succ_m#1111					
+#	ser-L_c#111									
 						
 ##	inputSubstrates					
 #	2mop_i					
