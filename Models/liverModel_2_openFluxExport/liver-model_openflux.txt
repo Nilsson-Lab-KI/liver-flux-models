@@ -1,6 +1,7 @@
 RxnID	rxnEq	rxnCTrans	rates	rxnType	basis	deviation
 ac_IN	ac_i = ac_c	ab = ab		F		
 ala-L_IN	ala-L_i = ala-L_c	abc = abc		F		
+ala-L_OUT	ala-L_c = ala-L_o	abc = abc		F		
 arg-L_IN	arg-L_i = arg-L_c	abcdef = abcdef		F		
 arg-L_OUT	arg-L_c = arg-L_o	abcdef = abcdef		B		
 asp-L_IN	asp-L_i = asp-L_c	abcd = abcd		F		
@@ -84,7 +85,6 @@ GAPD	g3p_c + nad_c + pi_c = 13dpg_c + h_c + nadh_c	abc + X + X = bca + X + X		FR
 GAPD_R	13dpg_c + h_c + nadh_c = g3p_c + nad_c + pi_c	abc + X + X = cab + X + X		R		
 GHMT2r	ser-L_c + thf_c = gly_c + mlthf_c + h2o_c	abc + X = bc + a + X		FR		
 GHMT2r_R	gly_c + mlthf_c + h2o_c = ser-L_c + thf_c	ab + c + X = cab + X		R		
-GLCter	glc-D_r = glc-D_c	abcdef = abcdef		F		
 GLNtm	gln-L_c = gln-L_m	abcde = abcde		F		
 GLUDxm	glu-L_m + h2o_m + nad_m = akg_m + h_m + nadh_m + nh4_m	abcde + X + X = abcde + X + X + X		FR		
 GLUDxm_R	akg_m + h_m + nadh_m + nh4_m = glu-L_m + h2o_m + nad_m	abcde + X + X + X = abcde + X + X		R		
