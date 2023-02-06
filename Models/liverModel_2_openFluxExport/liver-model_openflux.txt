@@ -11,9 +11,10 @@ energy_OUT	energy_c = energy_o	X = X		B
 glc-D_IN	glc-D_i = glc-D_v	abcdef = abcdef		F		
 glc-D_OUT	glc-D_e = glc-D_o	abcdef = abcdef		B		
 gln-L_IN	gln-L_i = gln-L_c	abcde = abcde		F		
-glucys_IN	glucys_i = glucys_c	abcdefgh = abcdefgh		F		
 glu-L_OUT	glu-L_c = glu-L_o	abcde = abcde		B		
+glucys_IN	glucys_i = glucys_c	abcdefgh = abcdefgh		F		
 gly_IN	gly_i = gly_c	ab = ab		F		
+gly_OUT	gly_c = gly_o	ab = ab		B		
 glyc_IN	glyc_i = glyc_c	abc = abc		F		
 glyc_OUT	glyc_c = glyc_o	abc = abc		B		
 glycogen_IN	glycogen_i = glycogen_r	abcdef = abcdef		F		
@@ -23,6 +24,8 @@ h2o_OUT	h2o_c = h2o_o	X = X		B
 h_IN	h_i = h_c	X = X		F		
 h_OUT	h_c = h_o	X = X		B		
 lac-L_OUT	lac-L_c = lac-L_o	abc = abc		B		
+mlthf_IN	mlthf_i = mlthf_c	X = X		F		
+mlthf_OUT	mlthf_c = mlthf_o	X = X		B		
 nh4_IN	nh4_i = nh4_c	X = X		F		
 nh4_OUT	nh4_c = nh4_o	X = X		B		
 o2_IN	o2_i = o2_c	X = X		F		
@@ -30,6 +33,8 @@ prot_ala_IN	prot_ala_i = prot_ala_l	abc = abc		F
 prot_arg_IN	prot_arg_i = prot_arg_l	abcdef = abcdef		F		
 ser-L_IN	ser-L_i = ser-L_c	abc = abc		F		
 ser-L_OUT	ser-L_c = ser-L_o	abc = abc		B		
+thf_IN	thf_i = thf_c	X = X		F		
+thf_OUT	thf_c = thf_o	X = X		B		
 urea_OUT	urea_c = urea_o	a = a		B		
 2AMACHYD	2amac_c + h2o_c = pyr_c + nh4_c	abc + X = abc + X		F		
 ACONTm	cit_m = icit_m	abcdef = bfdaec		FR		
@@ -150,38 +155,43 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	ala-L_i					
 #	ala-L_o					
 #	arg-L_i					
+#	arg-L_o					
 #	asp-L_i					
+#	asp-L_o					
 #	co2_i					
+#	co2_o					
 #	energy_i					
+#	energy_o					
 #	glc-D_i					
+#	glc-D_o					
 #	gln-L_i					
+#	glu-L_o					
 #	glucys_i					
 #	gly_i					
+#	gly_o					
 #	glyc_i					
+#	glyc_o					
 #	glycogen_i					
+#	gthrd_o					
 #	h2o_i					
+#	h2o_o					
 #	h_i					
+#	h_o					
+#	lac-L_o					
+#	mlthf_i					
+#	mlthf_o					
 #	nh4_i					
+#	nh4_o					
 #	o2_i					
 #	pi_i					
+#	pi_o					
 #	prot_ala_i					
 #	prot_arg_i					
 #	ser-L_i					
-#	arg-L_o					
-#	asp-L_o					
-#	co2_o					
-#	energy_o					
-#	glc-D_o					
-#	glu-L_o					
-#	gthrd_o					
-#	h2o_o					
-#	h_o					
-#	lac-L_o					
-#	nh4_o					
-#	pi_o					
-#	ser-L_o					
+#	ser-L_o				
+#	thf_i					
+#	thf_o				
 #	urea_o					
-#	glyc_o					
 						
 ##	simulatedMDVs									
 #	akg_m#11111					
@@ -221,6 +231,7 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	gly_i					
 #	glyc_i					
 #	glycogen_i					
+#	mlthf_i					
 #	prot_ala_i					
 #	prot_arg_i					
 #	ser-L_i					
