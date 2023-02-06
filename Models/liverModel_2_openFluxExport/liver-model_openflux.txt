@@ -1,5 +1,4 @@
 RxnID	rxnEq	rxnCTrans	rates	rxnType	basis	deviation
-ac_IN	ac_i = ac_c	ab = ab		F		
 ala-L_IN	ala-L_i = ala-L_c	abc = abc		F		
 ala-L_OUT	ala-L_c = ala-L_o	abc = abc		F		
 arg-L_IN	arg-L_i = arg-L_c	abcdef = abcdef		F		
@@ -33,12 +32,8 @@ ser-L_IN	ser-L_i = ser-L_c	abc = abc		F
 ser-L_OUT	ser-L_c = ser-L_o	abc = abc		B		
 urea_OUT	urea_c = urea_o	a = a		B		
 2AMACHYD	2amac_c + h2o_c = pyr_c + nh4_c	abc + X = abc + X		F		
-ACITL	cit_c + atp_c + coa_c = accoa_c + oaa_c + adp_c + pi_c	abcdef + X + X = bd + afce + X + X		F		
-ACOAHi	accoa_c + h2o_c = ac_c + coa_c + h_c	ab + X = ab + X + X		F		
 ACONTm	cit_m = icit_m	abcdef = bfdaec		FR		
 ACONTm_R	icit_m = cit_m	abcdef = dafceb		R		
-ACRNtm	acrn_c = acrn_m	ab = ab		F		
-ACS	ac_c + atp_c + coa_c = accoa_c + amp_c + ppi_c	ab + X + X = ab + X + X		F		
 ADK1	amp_c + atp_c = adp_c + adp_c	X + X = X + X		F		
 AKGDm	akg_m + coa_m + nad_m = co2_m + succoa_m + nadh_m	abcde + X + X = e + badc + X		FR		
 AKGDm_R	co2_m + succoa_m + nadh_m = akg_m + coa_m + nad_m	a + bcde + X = cbeda + X + X		R		
@@ -61,13 +56,9 @@ ATPtm	adp_c + atp_m = adp_m + atp_c	X + X = X + X		FR
 ATPtm_R	adp_m + atp_c = adp_c + atp_m	X + X = X + X		R		
 CBPSam	hco3_m + atp_m + atp_m + nh4_m = cbp_m + adp_m + adp_m + h_m + h_m + pi_m	a + X + X + X = a + X + X + X + X + X		F		
 CELLWORK	atp_c + h2o_c = adp_c + energy_c + h_c + pi_c	X + X = X + X + X + X		F		
-CITtm	cit_m = cit_c	abcdef = abcdef		F		
 CO2tm	co2_c = co2_m	a = a		FR		
 CO2tm_R	co2_m = co2_c	a = a		R		
-CRNtim	crn_m = crn_c	X = X		F		
 CSm	accoa_m + oaa_m + h2o_m = cit_m + coa_m + h_m	ab + cdef + X = caebfd + X + X		F		
-CSNATm	acrn_m + coa_m = accoa_m + crn_m	ab + X = ab + X		F		
-CSNATr	accoa_c + crn_c = acrn_c + coa_c	ab + X = ab + X		F		
 CYOOm	focytC_m + focytC_m + focytC_m + focytC_m + h_m + h_m + h_m + h_m + h_m + h_m + h_m + h_m + o2_m = ficytC_m + ficytC_m + ficytC_m + ficytC_m + h2o_m + h2o_m + h_ims_m + h_ims_m + h_ims_m + h_ims_m	X + X + X + X + X + X + X + X + X + X + X + X + X = X + X + X + X + X + X + X + X + X + X		F		
 CYOR-u10m	ficytC_m + ficytC_m + h_m + h_m + q10h2_m = focytC_m + focytC_m + h_ims_m + h_ims_m + h_ims_m + h_ims_m + q10_m	X + X + X + X + X = X + X + X + X + X + X + X		F		
 ENO	2pg_c = pep_c + h2o_c	abc = abc + X		FR		
@@ -98,7 +89,8 @@ GLYCOGEN_BREAK	glycogen_r + pi_c = g1p_r	abcdef + X = fedcba		F
 GLYCPH	glyc3p_c + h2o_c = glyc_c + pi_c	abc + X = abc + X 		F		
 GLYK	glyc_c + atp_c = glyc3p_c + adp_c + h_c	abc + X = bac + X + X		F		
 GTHS	glucys_c + gly_c + atp_c = gthrd_c + adp_c + h_c + pi_c	abcdefgh + ij + X = abicdefjhg + X + X + X		F		
-H2Oter	h2o_c = h2o_r	X = X		F		
+H2Oter	h2o_c = h2o_r	X = X		FR		
+H2Oter_R	h2o_r = h2o_c	X = X		R		
 H2Otm	h2o_c = h2o_m	X = X		FR		
 H2Otm_R	h2o_m = h2o_c	X = X		R		
 HCO3Em	co2_m + h2o_m = hco3_m + h_m	a + X = a + X		F		
@@ -137,7 +129,8 @@ PGM	3pg_c = 2pg_c	abc = abc		FR
 PGM_R	2pg_c = 3pg_c	abc = abc		R		
 PGMTer	g1p_r = g6p_r	abcdef = abcdef		F		
 PIt2m	pi_c = pi_m	X = X		F		
-PIter	pi_r = pi_c	X = X		F		
+PIter	pi_c = pi_r	X = X		FR		
+PIter_R	pi_r = pi_c	X = X		R		
 PPA	h2o_c + ppi_c = h_c + pi_c + pi_c	X + X = X + X + X		F		
 PROTDEG_ALA	prot_ala_l = ala-L_l	abc = abc		F		
 PROTDEG_ARG	prot_arg_l = arg-L_l	abcdef = abcdef		F		
@@ -153,7 +146,6 @@ TPI	dhap_c = g3p_c	abc = abc		FR
 TPI_R	g3p_c = dhap_c	abc = abc		R		
 						
 ##	excludedMetabolites					
-#	ac_i					
 #	ala-L_i					
 #	ala-L_o					
 #	arg-L_i					
@@ -216,7 +208,6 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	ser-L_c#111									
 						
 ##	inputSubstrates					
-#	ac_i					
 #	ala-L_i					
 #	arg-L_i					
 #	asp-L_i					
