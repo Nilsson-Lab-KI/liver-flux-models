@@ -68,7 +68,8 @@ FBA_R	dhap_c + g3p_c = fdp_c	abc + def = ebfdac		R
 FBP	fdp_c + h2o_c = f6p_c + pi_c	abcdef + X = abcdef + X		F		
 FUMm	fum_m + h2o_m = mal-L_m	abcd + X = abcd		F		
 FUMtm	fum_c = 0.5 fum_m + 0.5 fum_m	abcd = 0.5 abcd + 0.5 badc		F		
-G3PD1	dhap_c + nadh_c + h_c = glyc3p_c + nad_c	abc + X + X = abc + X		F		
+G3PD1	dhap_c + nadh_c + h_c = glyc3p_c + nad_c	abc + X + X = abc + X		FR		
+G3PD1_R	glyc3p_c + nad_c = dhap_c + nadh_c + h_c	abc + X = abc + X + X		R		
 G6PPer	g6p_r + h2o_r = glc-D_r + pi_r	abcdef + X = abcdef + X		F		
 G6Pter	g6p_c = g6p_r	abcdef = abcdef		F		
 GAPD	g3p_c + nad_c + pi_c = 13dpg_c + h_c + nadh_c	abc + X + X = bca + X + X		FR		
@@ -191,6 +192,7 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	arg-L_l#111111					
 #	asp-L_c#1111					
 #	asp-L_m#1111					
+#	cit_m#111111					
 #	citr-L_c#111111					
 #	citr-L_m#111111					
 #	glc-D_c#111111					
@@ -201,6 +203,7 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	glu-L_c#11111					
 #	glu-L_m#11111					
 #	gly_c#11					
+#	glyc3p_c#111					
 #	mal-L_c#1111					
 #	mal-L_m#1111					
 #	orn_c#11111					
