@@ -27,7 +27,7 @@ lac-L_OUT	lac-L_c = lac-L_o	abc = abc		B
 nh4_IN	nh4_i = nh4_c	X = X		F		
 nh4_OUT	nh4_c = nh4_o	X = X		B		
 o2_IN	o2_i = o2_c	X = X		F		
-prot_ala_IN	prot_ala_i = prot_ala_c	abc = abc		F		
+prot_ala_IN	prot_ala_i = prot_ala_l	abc = abc		F		
 prot_arg_IN	prot_arg_i = prot_arg_l	abcdef = abcdef		F		
 ser-L_IN	ser-L_i = ser-L_c	abc = abc		F		
 ser-L_OUT	ser-L_c = ser-L_o	abc = abc		B		
@@ -46,9 +46,11 @@ AKGtm	akg_c = akg_m	abcde = abcde		FR
 AKGtm_R	akg_m = akg_c	abcde = abcde		R		
 ALATA_L	akg_c + ala-L_c = glu-L_c + pyr_c	abcde + fgh = abcde + fgh		FR		
 ALATA_L_R	glu-L_c + pyr_c = akg_c + ala-L_c	abcde + fgh = abcde + fgh		R		
+ALAtl	ala-L_l = ala-L_c	abc = abc		F		
 ARGN	arg-L_c + h2o_c = orn_c + urea_c	abcdef + X = abcde + f		F		
 ARGSL	argsuc_c = arg-L_c + 0.5 fum_c + 0.5 fum_c	abcdefghij = abcehj + 0.5 dfgi + 0.5 fdig		F		
 ARGSS	asp-L_c + citr-L_c + atp_c = argsuc_c + amp_c + h_c + ppi_c	abcd + efghij + X = efgahbcidj + X + X + X		F		
+ARGtl	arg-L_l = arg-L_c	abcdef = abcdef		F		
 ASPTA	akg_c + asp-L_c = glu-L_c + oaa_c	abcde + fghi = abcde + fghi		FR		
 ASPTA_R	glu-L_c + oaa_c = akg_c + asp-L_c	abcde + fghi = abcde + fghi		R		
 ASPTAm	glu-L_m + oaa_m = akg_m + asp-L_m	abcde + fghi = abcde + fghi		FR		
@@ -137,7 +139,7 @@ PGMTer	g1p_r = g6p_r	abcdef = abcdef		F
 PIt2m	pi_c = pi_m	X = X		F		
 PIter	pi_r = pi_c	X = X		F		
 PPA	h2o_c + ppi_c = h_c + pi_c + pi_c	X + X = X + X + X		F		
-PROTDEG_ALA	prot_ala_c = ala-L_c	abc = abc		F		
+PROTDEG_ALA	prot_ala_l = ala-L_l	abc = abc		F		
 PROTDEG_ARG	prot_arg_l = arg-L_l	abcdef = abcdef		F		
 PSERT	3php_c + glu-L_c = akg_c + pser-L_c	abc + defgh = defgh + abc		F		
 PSP_L	pser-L_c + h2o_c = ser-L_c + pi_c	abc + X = abc + X		F		
@@ -149,7 +151,6 @@ SUCD1m	succ_m + q10_m = 0.5 fum_m + 0.5 fum_m + q10h2_m	abcd + X = 0.5 badc + 0.
 SUCOASm	succoa_m + adp_m + pi_m = 0.5 succ_m + 0.5 succ_m + atp_m + coa_m	abcd + X + X = 0.5 badc + 0.5 abcd + X + X		F		
 TPI	dhap_c = g3p_c	abc = abc		FR		
 TPI_R	g3p_c = dhap_c	abc = abc		R		
-ARG_tmL	arg-L_l = arg-L_c	abcdef = abcdef		F		
 						
 ##	excludedMetabolites					
 #	ac_i					
@@ -193,6 +194,7 @@ ARG_tmL	arg-L_l = arg-L_c	abcdef = abcdef		F
 #	akg_m#11111					
 #	akg_c#11111					
 #	ala-L_c#111					
+#	ala-L_l#111					
 #	arg-L_c#111111					
 #	arg-L_l#111111					
 #	asp-L_c#1111					
