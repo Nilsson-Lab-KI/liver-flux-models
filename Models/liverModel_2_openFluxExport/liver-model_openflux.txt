@@ -11,10 +11,10 @@ energy_OUT	energy_c = energy_o	X = X		B
 glc-D_IN	glc-D_i = glc-D_v	abcdef = abcdef		F		
 glc-D_OUT	glc-D_e = glc-D_o	abcdef = abcdef		B		
 gln-L_IN	gln-L_i = gln-L_c	abcde = abcde		F		
-glu-L_OUT	glu-L_c = glu-L_o	abcde = abcde		B		
+gln-L_OUT	gln-L_c = gln-L_o	abcde = abcde		B		
 glucys_IN	glucys_i = glucys_c	abcdefgh = abcdefgh		F		
+glu-L_OUT	glu-L_c = glu-L_o	abcde = abcde		B		
 gly_IN	gly_i = gly_c	ab = ab		F		
-gly_OUT	gly_c = gly_o	ab = ab		B		
 glyc_IN	glyc_i = glyc_c	abc = abc		F		
 glyc_OUT	glyc_c = glyc_o	abc = abc		B		
 glycogen_IN	glycogen_i = glycogen_r	abcdef = abcdef		F		
@@ -24,18 +24,13 @@ h2o_OUT	h2o_c = h2o_o	X = X		B
 h_IN	h_i = h_c	X = X		F		
 h_OUT	h_c = h_o	X = X		B		
 lac-L_OUT	lac-L_c = lac-L_o	abc = abc		B		
-mlthf_IN	mlthf_i = mlthf_c	X = X		F		
-mlthf_OUT	mlthf_c = mlthf_o	X = X		B		
 nh4_IN	nh4_i = nh4_c	X = X		F		
 nh4_OUT	nh4_c = nh4_o	X = X		B		
 o2_IN	o2_i = o2_c	X = X		F		
 prot_ala_IN	prot_ala_i = prot_ala_l	abc = abc		F		
 prot_arg_IN	prot_arg_i = prot_arg_l	abcdef = abcdef		F		
-prot_asp_IN	prot_asp_i = prot_asp_l	abcd = abcd		F		
 ser-L_IN	ser-L_i = ser-L_c	abc = abc		F		
 ser-L_OUT	ser-L_c = ser-L_o	abc = abc		B		
-thf_IN	thf_i = thf_c	X = X		F		
-thf_OUT	thf_c = thf_o	X = X		B		
 urea_OUT	urea_c = urea_o	a = a		B		
 2AMACHYD	2amac_c + h2o_c = pyr_c + nh4_c	abc + X = abc + X		F		
 ACONTm	cit_m = icit_m	abcdef = bfdaec		FR		
@@ -56,7 +51,6 @@ ASPTA	akg_c + asp-L_c = glu-L_c + oaa_c	abcde + fghi = abcde + fghi		FR
 ASPTA_R	glu-L_c + oaa_c = akg_c + asp-L_c	abcde + fghi = abcde + fghi		R		
 ASPTAm	glu-L_m + oaa_m = akg_m + asp-L_m	abcde + fghi = abcde + fghi		FR		
 ASPTAm_R	akg_m + asp-L_m = glu-L_m + oaa_m	abcde + fghi = abcde + fghi		R		
-ASPtl	asp-L_l = asp-L_c	abcd = abcd		F		
 ASPtm	asp-L_m = asp-L_c	abcd = abcd		F		
 ATPS4m	adp_m + h_ims_m + h_ims_m + h_ims_m + h_ims_m + pi_m = atp_m + h2o_m + h_m + h_m + h_m	X + X + X + X + X + X = X + X + X + X + X		F		
 ATPtm	adp_c + atp_m = adp_m + atp_c	X + X = X + X		FR		
@@ -77,15 +71,14 @@ FUMm	fum_m + h2o_m = mal-L_m	abcd + X = abcd		F
 FUMtm	fum_c = 0.5 fum_m + 0.5 fum_m	abcd = 0.5 abcd + 0.5 badc		F		
 G3PD1	dhap_c + nadh_c + h_c = glyc3p_c + nad_c	abc + X + X = abc + X		F		
 G6PPer	g6p_r + h2o_r = glc-D_r + pi_r	abcdef + X = abcdef + X		F		
-G6Pter	g6p_c = g6p_r	abcdef = abcdef		FR		
-G6Pter_R	g6p_r = g6p_c	abcdef = abcdef		R		
+G6Pter	g6p_c = g6p_r	abcdef = abcdef		F		
 GAPD	g3p_c + nad_c + pi_c = 13dpg_c + h_c + nadh_c	abc + X + X = bca + X + X		FR		
 GAPD_R	13dpg_c + h_c + nadh_c = g3p_c + nad_c + pi_c	abc + X + X = cab + X + X		R		
 GHMT2r	ser-L_c + thf_c = gly_c + mlthf_c + h2o_c	abc + X = bc + a + X		FR		
 GHMT2r_R	gly_c + mlthf_c + h2o_c = ser-L_c + thf_c	ab + c + X = cab + X		R		
-GLCmix	glc-D_v = glc-D_e	abcdef = abcdef		F	
-GLCtin	glc-D_v = glc-D_c	abcdef = abcdef		F	
-GLCtout	glc-D_r = glc-D_e	abcdef = abcdef		F	
+GLCmix	glc-D_v = glc-D_e	abcdef = abcdef		F		
+GLCtin	glc-D_v = glc-D_c	abcdef = abcdef		F		
+GLCtout	glc-D_r = glc-D_e	abcdef = abcdef		F		
 GLNtm	gln-L_c = gln-L_m	abcde = abcde		F		
 GLUDxm	glu-L_m + h2o_m + nad_m = akg_m + h_m + nadh_m + nh4_m	abcde + X + X = abcde + X + X + X		FR		
 GLUDxm_R	akg_m + h_m + nadh_m + nh4_m = glu-L_m + h2o_m + nad_m	abcde + X + X + X = abcde + X + X		R		
@@ -93,7 +86,7 @@ GLUNm	gln-L_m + h2o_m = glu-L_m + nh4_m	abcde + X = abcde + X		FR
 GLUNm_R	glu-L_m + nh4_m = gln-L_m + h2o_m	abcde + X = abcde + X		R		
 GLUt2m	glu-L_c = glu-L_m	abcde = abcde		FR		
 GLUt2m_R	glu-L_m = glu-L_c	abcde = abcde		R		
-GLYCOGEN_BREAK	glycogen_r + pi_r = g1p_r	abcdef + X = fedcba		F		
+GLYCOGEN_BREAK	glycogen_r + pi_c = g1p_r	abcdef + X = fedcba		F		
 GLYCPH	glyc3p_c + h2o_c = glyc_c + pi_c	abc + X = abc + X 		F		
 GLYK	glyc_c + atp_c = glyc3p_c + adp_c + h_c	abc + X = bac + X + X		F		
 GTHS	glucys_c + gly_c + atp_c = gthrd_c + adp_c + h_c + pi_c	abcdefgh + ij + X = abicdefjhg + X + X + X		F		
@@ -142,7 +135,6 @@ PIter_R	pi_r = pi_c	X = X		R
 PPA	h2o_c + ppi_c = h_c + pi_c + pi_c	X + X = X + X + X		F		
 PROTDEG_ALA	prot_ala_l = ala-L_l	abc = abc		F		
 PROTDEG_ARG	prot_arg_l = arg-L_l	abcdef = abcdef		F		
-PROTDEG_ASP	prot_asp_l = asp-L_l	abcd = abcd		F		
 PSERT	3php_c + glu-L_c = akg_c + pser-L_c	abc + defgh = defgh + abc		F		
 PSP_L	pser-L_c + h2o_c = ser-L_c + pi_c	abc + X = abc + X		F		
 PYK	pep_c + adp_c + h_c = pyr_c + atp_c	abc + X + X = abc + X		F		
@@ -158,56 +150,47 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	ala-L_i					
 #	ala-L_o					
 #	arg-L_i					
-#	arg-L_o					
 #	asp-L_i					
-#	asp-L_o					
 #	co2_i					
-#	co2_o					
 #	energy_i					
-#	energy_o					
 #	glc-D_i					
-#	glc-D_o					
 #	gln-L_i					
-#	glu-L_o					
 #	glucys_i					
 #	gly_i					
-#	gly_o					
 #	glyc_i					
-#	glyc_o					
 #	glycogen_i					
-#	gthrd_o					
 #	h2o_i					
-#	h2o_o					
 #	h_i					
-#	h_o					
-#	lac-L_o					
-#	mlthf_i					
-#	mlthf_o					
 #	nh4_i					
-#	nh4_o					
 #	o2_i					
 #	pi_i					
-#	pi_o					
 #	prot_ala_i					
 #	prot_arg_i					
-#	prot_asp_i					
 #	ser-L_i					
-#	ser-L_o				
-#	thf_i					
-#	thf_o				
+#	arg-L_o					
+#	asp-L_o					
+#	co2_o					
+#	energy_o					
+#	glc-D_o					
+#	gln-L_o					
+#	glu-L_o					
+#	gthrd_o					
+#	h2o_o					
+#	h_o					
+#	lac-L_o					
+#	nh4_o					
+#	pi_o					
+#	ser-L_o					
 #	urea_o					
+#	glyc_o					
 						
-##	simulatedMDVs									
-#	akg_m#11111					
-#	akg_c#11111					
+##	simulatedMDVs					
 #	ala-L_c#111					
 #	ala-L_l#111					
 #	arg-L_c#111111					
 #	arg-L_l#111111					
 #	asp-L_c#1111					
-#	asp-L_l#1111					
 #	asp-L_m#1111					
-#	cit_m#111111					
 #	citr-L_c#111111					
 #	citr-L_m#111111					
 #	glc-D_c#111111					
@@ -218,12 +201,11 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	glu-L_c#11111					
 #	glu-L_m#11111					
 #	gly_c#11					
-#	glyc3p_c#111					
 #	mal-L_c#1111					
 #	mal-L_m#1111					
 #	orn_c#11111					
 #	orn_m#11111					
-#	ser-L_c#111									
+#	ser-L_c#111					
 						
 ##	inputSubstrates					
 #	ala-L_i					
@@ -236,10 +218,8 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	gly_i					
 #	glyc_i					
 #	glycogen_i					
-#	mlthf_i					
 #	prot_ala_i					
 #	prot_arg_i					
-#	prot_asp_i					
 #	ser-L_i					
 						
 ##	measurements					
