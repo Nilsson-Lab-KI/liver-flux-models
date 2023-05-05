@@ -26,12 +26,13 @@ h_OUT	h_c = h_o	X = X		B
 lac-L_OUT	lac-L_c = lac-L_o	abc = abc		B		
 mlthf_IN	mlthf_i = mlthf_c	X = X		F		
 mlthf_OUT	mlthf_c = mlthf_o	X = X		B		
-nh4_IN	nh4_i = nh4_c	X = X		F		
-nh4_OUT	nh4_c = nh4_o	X = X		B		
 o2_IN	o2_i = o2_c	X = X		F		
 prot_ala_IN	prot_ala_i = prot_ala_l	abc = abc		F		
+prot_ala_OUT	prot_ala_c = prot_ala_o	abc = abc		F		
 prot_arg_IN	prot_arg_i = prot_arg_l	abcdef = abcdef		F		
+prot_arg_OUT	prot_arg_c = prot_arg_o	abcdef = abcdef		F		
 prot_asp_IN	prot_asp_i = prot_asp_l	abcd = abcd		F		
+prot_asp_OUT	prot_asp_c = prot_asp_o	abcd = abcd		F		
 ser-L_IN	ser-L_i = ser-L_c	abc = abc		F		
 ser-L_OUT	ser-L_c = ser-L_o	abc = abc		B		
 thf_IN	thf_i = thf_c	X = X		F		
@@ -143,6 +144,9 @@ PPA	h2o_c + ppi_c = h_c + pi_c + pi_c	X + X = X + X + X		F
 PROTDEG_ALA	prot_ala_l = ala-L_l	abc = abc		F		
 PROTDEG_ARG	prot_arg_l = arg-L_l	abcdef = abcdef		F		
 PROTDEG_ASP	prot_asp_l = asp-L_l	abcd = abcd		F		
+PROTSYN_ALA	ala-L_c = prot_ala_c	abc = abc		F		
+PROTSYN_ARG	arg-L_c = prot_arg_c	abcdef = abcdef		F		
+PROTSYN_ASP	asp-L_c = prot_asp_c	abcd = abcd		F		
 PSERT	3php_c + glu-L_c = akg_c + pser-L_c	abc + defgh = defgh + abc		F		
 PSP_L	pser-L_c + h2o_c = ser-L_c + pi_c	abc + X = abc + X		F		
 PYK	pep_c + adp_c + h_c = pyr_c + atp_c	abc + X + X = abc + X		F		
@@ -189,8 +193,11 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	pi_i					
 #	pi_o					
 #	prot_ala_i					
+#	prot_ala_o					
 #	prot_arg_i					
+#	prot_arg_o					
 #	prot_asp_i					
+#	prot_asp_o					
 #	ser-L_i					
 #	ser-L_o				
 #	thf_i					
