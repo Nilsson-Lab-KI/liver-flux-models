@@ -33,6 +33,8 @@ prot_arg_IN	prot_arg_i = prot_arg_l	abcdef = abcdef		F
 prot_arg_OUT	prot_arg_c = prot_arg_o	abcdef = abcdef		F		
 prot_asp_IN	prot_asp_i = prot_asp_l	abcd = abcd		F		
 prot_asp_OUT	prot_asp_c = prot_asp_o	abcd = abcd		F		
+prot_glu_IN	prot_glu_i = prot_glu_l	abcde = abcde		F		
+prot_glu_OUT	prot_glu_c = prot_glu_o	abcde = abcde		F		
 ser-L_IN	ser-L_i = ser-L_c	abc = abc		F		
 ser-L_OUT	ser-L_c = ser-L_o	abc = abc		B		
 thf_IN	thf_i = thf_c	X = X		F		
@@ -92,6 +94,7 @@ GLUDxm	glu-L_m + h2o_m + nad_m = akg_m + h_m + nadh_m + nh4_m	abcde + X + X = ab
 GLUDxm_R	akg_m + h_m + nadh_m + nh4_m = glu-L_m + h2o_m + nad_m	abcde + X + X + X = abcde + X + X		R		
 GLUNm	gln-L_m + h2o_m = glu-L_m + nh4_m	abcde + X = abcde + X		FR		
 GLUNm_R	glu-L_m + nh4_m = gln-L_m + h2o_m	abcde + X = abcde + X		R		
+GLUtl	glu-L_l = glu-L_c	abcde = abcde		F		
 GLUt2m	glu-L_c = glu-L_m	abcde = abcde		FR		
 GLUt2m_R	glu-L_m = glu-L_c	abcde = abcde		R		
 GLYCOGEN_BREAK	glycogen_r + pi_r = g1p_r	abcdef + X = fedcba		F		
@@ -144,9 +147,11 @@ PPA	h2o_c + ppi_c = h_c + pi_c + pi_c	X + X = X + X + X		F
 PROTDEG_ALA	prot_ala_l = ala-L_l	abc = abc		F		
 PROTDEG_ARG	prot_arg_l = arg-L_l	abcdef = abcdef		F		
 PROTDEG_ASP	prot_asp_l = asp-L_l	abcd = abcd		F		
+PROTDEG_GLU	prot_glu_l = glu-L_l	abcde = abcde		F		
 PROTSYN_ALA	ala-L_c = prot_ala_c	abc = abc		F		
 PROTSYN_ARG	arg-L_c = prot_arg_c	abcdef = abcdef		F		
 PROTSYN_ASP	asp-L_c = prot_asp_c	abcd = abcd		F		
+PROTSYN_GLU	glu-L_c = prot_glu_c	abcde = abcde		F		
 PSERT	3php_c + glu-L_c = akg_c + pser-L_c	abc + defgh = defgh + abc		F		
 PSP_L	pser-L_c + h2o_c = ser-L_c + pi_c	abc + X = abc + X		F		
 PYK	pep_c + adp_c + h_c = pyr_c + atp_c	abc + X + X = abc + X		F		
