@@ -26,7 +26,9 @@ h_OUT	h_c = h_o	X = X		B
 lac-L_OUT	lac-L_c = lac-L_o	abc = abc		B		
 mlthf_IN	mlthf_i = mlthf_c	X = X		F		
 mlthf_OUT	mlthf_c = mlthf_o	X = X		B		
+nh4_OUT	nh4_c = nh4_o	X = X		B		
 o2_IN	o2_i = o2_c	X = X		F		
+pi_IN	pi_i = pi_c	X = X		F		
 prot_ala_IN	prot_ala_i = prot_ala_l	abc = abc		F		
 prot_ala_OUT	prot_ala_c = prot_ala_o	abc = abc		F		
 prot_arg_IN	prot_arg_i = prot_arg_l	abcdef = abcdef		F		
@@ -35,6 +37,7 @@ prot_asp_IN	prot_asp_i = prot_asp_l	abcd = abcd		F
 prot_asp_OUT	prot_asp_c = prot_asp_o	abcd = abcd		F		
 prot_glu_IN	prot_glu_i = prot_glu_l	abcde = abcde		F		
 prot_glu_OUT	prot_glu_c = prot_glu_o	abcde = abcde		F		
+r5p_OUT	r5p_c = r5p_o	abcde = abcde		B		
 ser-L_IN	ser-L_i = ser-L_c	abc = abc		F		
 ser-L_OUT	ser-L_c = ser-L_o	abc = abc		B		
 thf_IN	thf_i = thf_c	X = X		F		
@@ -79,6 +82,7 @@ FBP	fdp_c + h2o_c = f6p_c + pi_c	abcdef + X = abcdef + X		F
 FUMm	fum_m + h2o_m = mal-L_m	abcd + X = abcd		F		
 FUMtm	fum_c = 0.5 fum_m + 0.5 fum_m	abcd = 0.5 abcd + 0.5 badc		F		
 G3PD1	dhap_c + nadh_c + h_c = glyc3p_c + nad_c	abc + X + X = abc + X		F		
+G6PDH2r	g6p_c + nadp_c = 6pgl_c + h_c + nadph_c	abcdef + X = abcdef + X + X		F		
 G6PPer	g6p_r + h2o_r = glc-D_r + pi_r	abcdef + X = abcdef + X		F		
 G6Pter	g6p_c = g6p_r	abcdef = abcdef		FR		
 G6Pter_R	g6p_r = g6p_c	abcdef = abcdef		R		
@@ -100,6 +104,7 @@ GLUt2m_R	glu-L_m = glu-L_c	abcde = abcde		R
 GLYCOGEN_BREAK	glycogen_r + pi_r = g1p_r	abcdef + X = fedcba		F		
 GLYCPH	glyc3p_c + h2o_c = glyc_c + pi_c	abc + X = abc + X 		F		
 GLYK	glyc_c + atp_c = glyc3p_c + adp_c + h_c	abc + X = bac + X + X		F		
+GND	6pgc_c + nadp_c = ru5p-D_c + co2_c + nadph_c	abcdef + X = eadbc + f + X		F		
 GTHS	glucys_c + gly_c + atp_c = gthrd_c + adp_c + h_c + pi_c	abcdefgh + ij + X = abicdefjhg + X + X + X		F		
 H2Oter	h2o_c = h2o_r	X = X		FR		
 H2Oter_R	h2o_r = h2o_c	X = X		R		
@@ -122,6 +127,8 @@ MDHm_R	oaa_m + h_m + nadh_m = mal-L_m + nad_m	abcd + X + X = abcd + X		R
 NADH2-u10m	h_m + h_m + h_m + h_m + h_m + nadh_m + q10_m = h_ims_m + h_ims_m + h_ims_m + h_ims_m + nad_m + q10h2_m	X + X + X + X + X + X + X = X + X + X + X + X + X		F		
 NADH_REDOX	nadh_c = h_c + nad_c	X = X + X		FR		
 NADH_REDOX_R	h_c + nad_c = nadh_c	X + X = X		R		
+NADPH_REDOX	nadph_c = h_c + nadp_c	X = X + X		FR		
+NADPH_REDOX_R	h_c + nadp_c = nadph_c	X + X = X		R		
 NDPK1	atp_c + gdp_c = adp_c + gtp_c	X + X = X + X		F		
 NH4tm	nh4_c = nh4_m	X = X		FR		
 NH4tm_R	nh4_m = nh4_c	X = X		R		
@@ -137,6 +144,7 @@ PGI	g6p_c = f6p_c	abcdef = afbcde		FR
 PGI_R	f6p_c = g6p_c	abcdef = acdefb		R		
 PGK	13dpg_c + adp_c = 3pg_c + atp_c	abc + X = abc + X		FR		
 PGK_R	3pg_c + atp_c = 13dpg_c + adp_c	abc + X = abc + X		R		
+PGL	6pgl_c + h2o_c = 6pgc_c + h_c	abcdef + X = abcdef + X		F		
 PGM	3pg_c = 2pg_c	abc = abc		FR		
 PGM_R	2pg_c = 3pg_c	abc = abc		R		
 PGMTer	g1p_r = g6p_r	abcdef = abcdef		F		
@@ -157,9 +165,14 @@ PSP_L	pser-L_c + h2o_c = ser-L_c + pi_c	abc + X = abc + X		F
 PYK	pep_c + adp_c + h_c = pyr_c + atp_c	abc + X + X = abc + X		F		
 PYRt2m	pyr_c = pyr_m	abc = abc		FR		
 PYRt2m_R	pyr_m = pyr_c	abc = abc		R		
+RPE	ru5p-D_c = xu5p-D_c	abcde = abcde		F		
+RPI	ru5p-D_c = r5p_c	abcde = bdeca		F		
 SERHL	ser-L_c = 2amac_c + h2o_c	abc = abc + X		F		
 SUCD1m	succ_m + q10_m = 0.5 fum_m + 0.5 fum_m + q10h2_m	abcd + X = 0.5 badc + 0.5 abcd + X		F		
 SUCOASm	succoa_m + adp_m + pi_m = 0.5 succ_m + 0.5 succ_m + atp_m + coa_m	abcd + X + X = 0.5 badc + 0.5 abcd + X + X		F		
+TALA	g3p_c + s7p_c = f6p_c + e4p_c	abc + defghij = bdcahf + jeig		F		
+TKT1	r5p_c + xu5p-D_c = s7p_c + g3p_c	abcde + fghij = fahbecd + jgi		F		
+TKT2	e4p_c + xu5p-D_c = f6p_c + g3p_c	abcd + efghi = bedcag + ifh		F		
 TPI	dhap_c = g3p_c	abc = abc		FR		
 TPI_R	g3p_c = dhap_c	abc = abc		R		
 						
@@ -203,6 +216,7 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	prot_arg_o					
 #	prot_asp_i					
 #	prot_asp_o					
+#	r5p_c
 #	ser-L_i					
 #	ser-L_o				
 #	thf_i					
