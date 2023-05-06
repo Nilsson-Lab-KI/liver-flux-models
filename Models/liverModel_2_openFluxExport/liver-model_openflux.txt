@@ -125,10 +125,7 @@ MDH_R	oaa_c + h_c + nadh_c = mal-L_c + nad_c	abcd + X + X = abcd + X		R
 MDHm	mal-L_m + nad_m = oaa_m + h_m + nadh_m	abcd + X = abcd + X + X		FR		
 MDHm_R	oaa_m + h_m + nadh_m = mal-L_m + nad_m	abcd + X + X = abcd + X		R		
 NADH2-u10m	h_m + h_m + h_m + h_m + h_m + nadh_m + q10_m = h_ims_m + h_ims_m + h_ims_m + h_ims_m + nad_m + q10h2_m	X + X + X + X + X + X + X = X + X + X + X + X + X		F		
-NADH_REDOX	nadh_c = h_c + nad_c	X = X + X		FR		
-NADH_REDOX_R	h_c + nad_c = nadh_c	X + X = X		R		
-NADPH_REDOX	nadph_c = h_c + nadp_c	X = X + X		FR		
-NADPH_REDOX_R	h_c + nadp_c = nadph_c	X + X = X		R		
+NADPH_REDOX	nadph_c = h_c + nadp_c	X = X + X		F		
 NDPK1	atp_c + gdp_c = adp_c + gtp_c	X + X = X + X		F		
 NH4tm	nh4_c = nh4_m	X = X		FR		
 NH4tm_R	nh4_m = nh4_c	X = X		R		
