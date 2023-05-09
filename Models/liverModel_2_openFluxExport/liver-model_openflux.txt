@@ -1,8 +1,8 @@
 RxnID	rxnEq	rxnCTrans	rates	rxnType	basis	deviation
 ala-L_IN	ala-L_i = ala-L_c	abc = abc		F		
 ala-L_OUT	ala-L_c = ala-L_o	abc = abc		F		
-arg-L_IN	arg-L_i = arg-L_c	abcdef = abcdef		F		
-arg-L_OUT	arg-L_c = arg-L_o	abcdef = abcdef		B		
+arg-L_IN	arg-L_i = arg-L_v	abcdef = abcdef		F		
+arg-L_OUT	arg-L_e = arg-L_o	abcdef = abcdef		B		
 asp-L_IN	asp-L_i = asp-L_c	abcd = abcd		F		
 asp-L_OUT	asp-L_c = asp-L_o	abcd = abcd		B		
 co2_IN	co2_i = co2_c	a = a		F		
@@ -54,7 +54,10 @@ ALAtl	ala-L_l = ala-L_c	abc = abc		F
 ARGN	arg-L_c + h2o_c = orn_c + urea_c	abcdef + X = abcde + f		F		
 ARGSL	argsuc_c = arg-L_c + 0.5 fum_c + 0.5 fum_c	abcdefghij = abcehj + 0.5 dfgi + 0.5 fdig		F		
 ARGSS	asp-L_c + citr-L_c + atp_c = argsuc_c + amp_c + h_c + ppi_c	abcd + efghij + X = efgahbcidj + X + X + X		F		
+ARGmix	arg-L_v = arg-L_e	abcdef = abcdef		F	
 ARGtl	arg-L_l = arg-L_c	abcdef = abcdef		F		
+ARGtin	arg-L_v = arg-L_c	abcdef = abcdef		F	
+ARGtout	arg-L_c = arg-L_e	abcdef = abcdef		F	
 ASPTA	akg_c + asp-L_c = glu-L_c + oaa_c	abcde + fghi = abcde + fghi		FR		
 ASPTA_R	glu-L_c + oaa_c = akg_c + asp-L_c	abcde + fghi = abcde + fghi		R		
 ASPTAm	glu-L_m + oaa_m = akg_m + asp-L_m	abcde + fghi = abcde + fghi		FR		
@@ -213,6 +216,7 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	ala-L_c#111					
 #	ala-L_l#111					
 #	arg-L_c#111111					
+#	arg-L_e#111111					
 #	arg-L_l#111111					
 #	asp-L_c#1111					
 #	asp-L_l#1111					
