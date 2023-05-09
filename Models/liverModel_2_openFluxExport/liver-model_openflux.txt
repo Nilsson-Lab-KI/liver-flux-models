@@ -3,15 +3,16 @@ ala-L_IN	ala-L_i = ala-L_v	abc = abc		F
 ala-L_OUT	ala-L_e = ala-L_o	abc = abc		F		
 arg-L_IN	arg-L_i = arg-L_v	abcdef = abcdef		F		
 arg-L_OUT	arg-L_e = arg-L_o	abcdef = abcdef		B		
-asp-L_IN	asp-L_i = asp-L_c	abcd = abcd		F		
-asp-L_OUT	asp-L_c = asp-L_o	abcd = abcd		B		
+asp-L_IN	asp-L_i = asp-L_v	abcd = abcd		F		
+asp-L_OUT	asp-L_e = asp-L_o	abcd = abcd		B		
 co2_IN	co2_i = co2_c	a = a		F		
 co2_OUT	co2_c = co2_o	a = a		B		
 energy_OUT	energy_c = energy_o	X = X		B		
 glc-D_IN	glc-D_i = glc-D_v	abcdef = abcdef		F		
 glc-D_OUT	glc-D_e = glc-D_o	abcdef = abcdef		B		
 gln-L_IN	gln-L_i = gln-L_c	abcde = abcde		F		
-glu-L_OUT	glu-L_c = glu-L_o	abcde = abcde		B		
+glu-L_IN	glu-L_i = glu-L_v	abcde = abcde		F		
+glu-L_OUT	glu-L_e = glu-L_o	abcde = abcde		B		
 glucys_IN	glucys_i = glucys_c	abcdefgh = abcdefgh		F		
 gly_IN	gly_i = gly_c	ab = ab		F		
 gly_OUT	gly_c = gly_o	ab = ab		B		
@@ -66,6 +67,9 @@ ASPTA_R	glu-L_c + oaa_c = akg_c + asp-L_c	abcde + fghi = abcde + fghi		R
 ASPTAm	glu-L_m + oaa_m = akg_m + asp-L_m	abcde + fghi = abcde + fghi		FR		
 ASPTAm_R	akg_m + asp-L_m = glu-L_m + oaa_m	abcde + fghi = abcde + fghi		R		
 ASPtl	asp-L_l = asp-L_c	abcd = abcd		F		
+ASPmix	asp-L_v = asp-L_e	abcd = abcd		F	
+ASPtin	asp-L_v = asp-L_c	abcd = abcd		F	
+ASPtout	asp-L_c = asp-L_e	abcd = abcd		F	
 ASPtm	asp-L_m = asp-L_c	abcd = abcd		F		
 ATPS4m	adp_m + h_ims_m + h_ims_m + h_ims_m + h_ims_m + pi_m = atp_m + h2o_m + h_m + h_m + h_m	X + X + X + X + X + X = X + X + X + X + X		F		
 ATPtm	adp_c + atp_m = adp_m + atp_c	X + X = X + X		FR		
@@ -103,6 +107,9 @@ GLUNm_R	glu-L_m + nh4_m = gln-L_m + h2o_m	abcde + X = abcde + X		R
 GLUtl	glu-L_l = glu-L_c	abcde = abcde		F		
 GLUt2m	glu-L_c = glu-L_m	abcde = abcde		FR		
 GLUt2m_R	glu-L_m = glu-L_c	abcde = abcde		R		
+GLUmix	glu-L_v = glu-L_e	abcde = abcde		F	
+GLUtin	glu-L_v = glu-L_c	abcde = abcde		F	
+GLUtout	glu-L_c = glu-L_e	abcde = abcde		F	
 GLYCOGEN_BREAK	glycogen_r + pi_r = g1p_r	abcdef + X = fedcba		F		
 GLYCPH	glyc3p_c + h2o_c = glyc_c + pi_c	abc + X = abc + X 		F		
 GLYK	glyc_c + atp_c = glyc3p_c + adp_c + h_c	abc + X = bac + X + X		F		
@@ -223,6 +230,7 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	arg-L_e#111111					
 #	arg-L_l#111111					
 #	asp-L_c#1111					
+#	asp-L_e#1111					
 #	asp-L_l#1111					
 #	asp-L_m#1111					
 #	cit_m#111111					
@@ -234,6 +242,7 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	gln-L_c#11111					
 #	gln-L_m#11111					
 #	glu-L_c#11111					
+#	glu-L_e#11111					
 #	glu-L_m#11111					
 #	gly_c#11					
 #	glyc3p_c#111					
