@@ -16,7 +16,6 @@ glu-L_OUT	glu-L_e = glu-L_o	abcde = abcde		B
 glucys_IN	glucys_i = glucys_c	abcdefgh = abcdefgh		F		
 gly_IN	gly_i = gly_c	ab = ab		F		
 gly_OUT	gly_c = gly_o	ab = ab		B		
-glyc_IN	glyc_i = glyc_c	abc = abc		F		
 glyc_OUT	glyc_c = glyc_o	abc = abc		B		
 glycogen_IN	glycogen_i = glycogen_r	abcdef = abcdef		F		
 gthrd_OUT	gthrd_c = gthrd_o	abcdefghij = abcdefghij		B		
@@ -112,7 +111,6 @@ GLUtin	glu-L_v = glu-L_c	abcde = abcde		F
 GLUtout	glu-L_c = glu-L_e	abcde = abcde		F	
 GLYCOGEN_BREAK	glycogen_r + pi_r = g1p_r	abcdef + X = fedcba		F		
 GLYCPH	glyc3p_c + h2o_c = glyc_c + pi_c	abc + X = abc + X 		F		
-GLYK	glyc_c + atp_c = glyc3p_c + adp_c + h_c	abc + X = bac + X + X		F		
 GTHS	glucys_c + gly_c + atp_c = gthrd_c + adp_c + h_c + pi_c	abcdefgh + ij + X = abicdefjhg + X + X + X		F		
 H2Oter	h2o_c = h2o_r	X = X		FR		
 H2Oter_R	h2o_r = h2o_c	X = X		R		
