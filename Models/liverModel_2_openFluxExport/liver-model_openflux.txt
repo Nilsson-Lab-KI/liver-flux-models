@@ -1,6 +1,6 @@
 RxnID	rxnEq	rxnCTrans	rates	rxnType	basis	deviation
-ala-L_IN	ala-L_i = ala-L_c	abc = abc		F		
-ala-L_OUT	ala-L_c = ala-L_o	abc = abc		F		
+ala-L_IN	ala-L_i = ala-L_v	abc = abc		F		
+ala-L_OUT	ala-L_e = ala-L_o	abc = abc		F		
 arg-L_IN	arg-L_i = arg-L_v	abcdef = abcdef		F		
 arg-L_OUT	arg-L_e = arg-L_o	abcdef = abcdef		B		
 asp-L_IN	asp-L_i = asp-L_c	abcd = abcd		F		
@@ -50,7 +50,10 @@ AKGtm	akg_c = akg_m	abcde = abcde		FR
 AKGtm_R	akg_m = akg_c	abcde = abcde		R		
 ALATA_L	akg_c + ala-L_c = glu-L_c + pyr_c	abcde + fgh = abcde + fgh		FR		
 ALATA_L_R	glu-L_c + pyr_c = akg_c + ala-L_c	abcde + fgh = abcde + fgh		R		
+ALAmix	ala-L_v = ala-L_e	abc = abc		F	
 ALAtl	ala-L_l = ala-L_c	abc = abc		F		
+ALAtin	ala-L_v = ala-L_c	abc = abc		F	
+ALAtout	ala-L_c = ala-L_e	abc = abc		F	
 ARGN	arg-L_c + h2o_c = orn_c + urea_c	abcdef + X = abcde + f		F		
 ARGSL	argsuc_c = arg-L_c + 0.5 fum_c + 0.5 fum_c	abcdefghij = abcehj + 0.5 dfgi + 0.5 fdig		F		
 ARGSS	asp-L_c + citr-L_c + atp_c = argsuc_c + amp_c + h_c + ppi_c	abcd + efghij + X = efgahbcidj + X + X + X		F		
@@ -214,6 +217,7 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 						
 ##	simulatedMDVs									
 #	ala-L_c#111					
+#	ala-L_e#111					
 #	ala-L_l#111					
 #	arg-L_c#111111					
 #	arg-L_e#111111					
