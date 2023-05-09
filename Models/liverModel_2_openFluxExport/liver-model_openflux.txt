@@ -210,8 +210,6 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	urea_o					
 						
 ##	simulatedMDVs									
-#	akg_m#11111					
-#	akg_c#11111					
 #	ala-L_c#111					
 #	ala-L_l#111					
 #	arg-L_c#111111					
