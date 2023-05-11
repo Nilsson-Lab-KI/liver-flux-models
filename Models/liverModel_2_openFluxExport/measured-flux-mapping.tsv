@@ -29,6 +29,7 @@ protsyn_arg	PROTSYN_ARG	1
 protsyn_asp	PROTSYN_ASP	1
 protsyn_glu	PROTSYN_GLU	1
 protsyn_ser	PROTSYN_SER	1
+protsyn_atp	PROTSYN_ATP	1
 atp_turnover	ATPS4m	1
 atp_turnover	PGK	1
 atp_turnover	PGK_R	-1
