@@ -26,6 +26,7 @@ h_OUT	h_c = h_o	X = X		B
 lac-L_OUT	lac-L_c = lac-L_o	abc = abc		B		
 mlthf_IN	mlthf_i = mlthf_c	X = X		F		
 mlthf_OUT	mlthf_c = mlthf_o	X = X		B		
+nh4_OUT	nh4_c = nh4_o	X = X		F		
 o2_IN	o2_i = o2_c	X = X		F		
 prot_ala_IN	prot_ala_i = prot_ala_l	abc = abc		F		
 prot_ala_OUT	prot_ala_c = prot_ala_o	abc = abc		F		
@@ -76,7 +77,7 @@ ATPS4m	adp_m + h_ims_m + h_ims_m + h_ims_m + h_ims_m + pi_m = atp_m + h2o_m + h_
 ATPtm	adp_c + atp_m = adp_m + atp_c	X + X = X + X		FR		
 ATPtm_R	adp_m + atp_c = adp_c + atp_m	X + X = X + X		R		
 CBPSam	hco3_m + atp_m + atp_m + nh4_m = cbp_m + adp_m + adp_m + h_m + h_m + pi_m	a + X + X + X = a + X + X + X + X + X		F		
-CELLWORK	atp_c + h2o_c = adp_c + energy_c + h_c + pi_c	X + X = X + X + X + X		F		
+ATPASES	atp_c + h2o_c = adp_c + h_c + pi_c	X + X = X + X + X + X		F		
 CO2tm	co2_c = co2_m	a = a		FR		
 CO2tm_R	co2_m = co2_c	a = a		R		
 CSm	accoa_m + oaa_m + h2o_m = cit_m + coa_m + h_m	ab + cdef + X = caebfd + X + X		F		
@@ -199,8 +200,6 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	asp-L_o					
 #	co2_i					
 #	co2_o					
-#	energy_i					
-#	energy_o					
 #	glc-D_i					
 #	glc-D_o					
 #	gln-L_i					
