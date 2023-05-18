@@ -72,7 +72,8 @@ ASPtl	asp-L_l = asp-L_c	abcd = abcd		F
 ASPmix	asp-L_v = asp-L_e	abcd = abcd		F	
 ASPtin	asp-L_v = asp-L_c	abcd = abcd		F	
 ASPtout	asp-L_c = asp-L_e	abcd = abcd		F	
-ASPtm	asp-L_m = asp-L_c	abcd = abcd		F		
+ASPtm	asp-L_m = asp-L_c	abcd = abcd		FR		
+ASPtm_R	asp-L_c = asp-L_m	abcd = abcd		R		
 ATPS4m	adp_m + h_ims_m + h_ims_m + h_ims_m + h_ims_m + pi_m = atp_m + h2o_m + h_m + h_m + h_m	X + X + X + X + X + X = X + X + X + X + X		F		
 ATPtm	adp_c + atp_m = adp_m + atp_c	X + X = X + X		FR		
 ATPtm_R	adp_m + atp_c = adp_c + atp_m	X + X = X + X		R		
@@ -91,6 +92,7 @@ FBP	fdp_c + h2o_c = f6p_c + pi_c	abcdef + X = abcdef + X		F
 FUMm	fum_m + h2o_m = mal-L_m	abcd + X = abcd		F		
 FUMtm	fum_c = 0.5 fum_m + 0.5 fum_m	abcd = 0.5 abcd + 0.5 badc		F		
 G3PD1	dhap_c + nadh_c + h_c = glyc3p_c + nad_c	abc + X + X = abc + X		F		
+G5SDxm	glu5sa_m + nad_m + h2o_m = glu-L_m + nadh_m + h_m + h_m	abcde + X + X = abcde + X + X + X		F		
 G6PDH2r	g6p_c + nadp_c = 6pgl_c + h_c + nadph_c	abcdef + X = abcdef + X + X		F		
 G6PPer	g6p_r + h2o_r = glc-D_r + pi_r	abcdef + X = abcdef + X		F		
 G6Pter	g6p_c = g6p_r	abcdef = abcdef		FR		
@@ -141,7 +143,9 @@ NDPK1	atp_c + gdp_c = adp_c + gtp_c	X + X = X + X		F
 NH4tm	nh4_c = nh4_m	X = X		FR		
 NH4tm_R	nh4_m = nh4_c	X = X		R		
 O2tm	o2_c = o2_m	X = X		F		
+ORNTArm	orn_m + akg_m = glu5sa_m + glu-L_m	abcde + fghij = abcde + fghij		F		
 OCBTm	cbp_m + orn_m = citr-L_m + h_m + pi_m	a + bcdef = bcdefa + X + X		F		
+ORNtm	orn_c = orn_m	abcde = abcde		F		
 ORNt4m	citr-L_m + orn_c = citr-L_c + orn_m	abcdef + ghijk = abcdef + ghijk		F		
 PCm	hco3_m + pyr_m + atp_m = oaa_m + adp_m + h_m + pi_m	a + bcd + X = bcad + X + X + X		F		
 PDHm	pyr_m + coa_m + nad_m = accoa_m + co2_m + nadh_m	abc + X + X = ab + c + X		F		
