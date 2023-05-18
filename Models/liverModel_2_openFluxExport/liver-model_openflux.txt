@@ -11,6 +11,7 @@ energy_OUT	energy_c = energy_o	X = X		B
 glc-D_IN	glc-D_i = glc-D_v	abcdef = abcdef		F		
 glc-D_OUT	glc-D_e = glc-D_o	abcdef = abcdef		B		
 gln-L_IN	gln-L_i = gln-L_c	abcde = abcde		F		
+gln-L_OUT	gln-L_c = gln-L_o	abcde = abcde		B		
 glu-L_IN	glu-L_i = glu-L_v	abcde = abcde		F		
 glu-L_OUT	glu-L_e = glu-L_o	abcde = abcde		B		
 glucys_IN	glucys_i = glucys_c	abcdefgh = abcdefgh		F		
@@ -26,7 +27,8 @@ h_OUT	h_c = h_o	X = X		B
 lac-L_OUT	lac-L_c = lac-L_o	abc = abc		B		
 mlthf_IN	mlthf_i = mlthf_c	X = X		F		
 mlthf_OUT	mlthf_c = mlthf_o	X = X		B		
-nh4_OUT	nh4_c = nh4_o	X = X		F		
+nh4_IN	nh4_i = nh4_c	X = X		F		
+nh4_OUT	nh4_c = nh4_o	X = X		B		
 o2_IN	o2_i = o2_c	X = X		F		
 prot_ala_IN	prot_ala_i = prot_ala_l	abc = abc		F		
 prot_ala_OUT	prot_ala_c = prot_ala_o	abc = abc		F		
@@ -34,6 +36,8 @@ prot_arg_IN	prot_arg_i = prot_arg_l	abcdef = abcdef		F
 prot_arg_OUT	prot_arg_c = prot_arg_o	abcdef = abcdef		F		
 prot_asp_IN	prot_asp_i = prot_asp_l	abcd = abcd		F		
 prot_asp_OUT	prot_asp_c = prot_asp_o	abcd = abcd		F		
+prot_gln_IN	prot_gln_i = prot_gln_l	abcde = abcde		F		
+prot_gln_OUT	prot_gln_c = prot_gln_o	abcde = abcde		F		
 prot_glu_IN	prot_glu_i = prot_glu_l	abcde = abcde		F		
 prot_glu_OUT	prot_glu_c = prot_glu_o	abcde = abcde		F		
 prot_ser_IN	prot_ser_i = prot_ser_l	abc = abc		F		
@@ -104,11 +108,12 @@ GHMT2r_R	gly_c + mlthf_c + h2o_c = ser-L_c + thf_c	ab + c + X = cab + X		R
 GLCmix	glc-D_v = glc-D_e	abcdef = abcdef		F	
 GLCtin	glc-D_v = glc-D_c	abcdef = abcdef		F	
 GLCtout	glc-D_r = glc-D_e	abcdef = abcdef		F	
+GLNS	glu-L_c + nh4_c + atp_c = gln-L_c + adp_c + pi_c + h_c	abcde + X + X = abcde + X + X + X		F	
+GLNtl	gln-L_l = gln-L_c	abcde = abcde		F		
 GLNtm	gln-L_c = gln-L_m	abcde = abcde		F		
 GLUDxm	glu-L_m + h2o_m + nad_m = akg_m + h_m + nadh_m + nh4_m	abcde + X + X = abcde + X + X + X		FR		
 GLUDxm_R	akg_m + h_m + nadh_m + nh4_m = glu-L_m + h2o_m + nad_m	abcde + X + X + X = abcde + X + X		R		
-GLUNm	gln-L_m + h2o_m = glu-L_m + nh4_m	abcde + X = abcde + X		FR		
-GLUNm_R	glu-L_m + nh4_m = gln-L_m + h2o_m	abcde + X = abcde + X		R		
+GLUNm	gln-L_m + h2o_m = glu-L_m + nh4_m	abcde + X = abcde + X		F		
 GLUtl	glu-L_l = glu-L_c	abcde = abcde		F		
 GLUt2m	glu-L_c = glu-L_m	abcde = abcde		FR		
 GLUt2m_R	glu-L_m = glu-L_c	abcde = abcde		R		
@@ -167,11 +172,13 @@ PPA	h2o_c + ppi_c = h_c + pi_c + pi_c	X + X = X + X + X		F
 PROTDEG_ALA	prot_ala_l = ala-L_l	abc = abc		F		
 PROTDEG_ARG	prot_arg_l = arg-L_l	abcdef = abcdef		F		
 PROTDEG_ASP	prot_asp_l = asp-L_l	abcd = abcd		F		
+PROTDEG_GLN	prot_gln_l = gln-L_l	abcde = abcde		F		
 PROTDEG_GLU	prot_glu_l = glu-L_l	abcde = abcde		F		
 PROTDEG_SER	prot_ser_l = ser-L_l	abc = abc		F		
 PROTSYN_ALA	ala-L_c = prot_ala_c	abc = abc		F		
 PROTSYN_ARG	arg-L_c = prot_arg_c	abcdef = abcdef		F		
 PROTSYN_ASP	asp-L_c = prot_asp_c	abcd = abcd		F		
+PROTSYN_GLN	gln-L_c = prot_gln_c	abcde = abcde		F		
 PROTSYN_GLU	glu-L_c = prot_glu_c	abcde = abcde		F		
 PROTSYN_SER	ser-L_c = prot_ser_c	abc = abc		F		
 PROTSYN_ATP	4 atp_c + 4 h2o_c = 4 adp_c + 4 pi_c + 4 h_c	X + X = X + X + X		F		
@@ -207,6 +214,8 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	glc-D_i					
 #	glc-D_o					
 #	gln-L_i					
+#	gln-L_o					
+#	glu-L_i					
 #	glu-L_o					
 #	glucys_i					
 #	gly_i					
@@ -233,6 +242,12 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	prot_arg_o					
 #	prot_asp_i					
 #	prot_asp_o					
+#	prot_glu_i					
+#	prot_glu_o					
+#	prot_gln_i					
+#	prot_gln_o					
+#	prot_ser_i					
+#	prot_ser_o					
 #	ser-L_i					
 #	ser-L_o				
 #	thf_i					
