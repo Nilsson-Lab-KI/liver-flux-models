@@ -10,8 +10,8 @@ co2_OUT	co2_c = co2_o	a = a		B
 energy_OUT	energy_c = energy_o	X = X		B		
 glc-D_IN	glc-D_i = glc-D_v	abcdef = abcdef		F		
 glc-D_OUT	glc-D_e = glc-D_o	abcdef = abcdef		B		
-gln-L_IN	gln-L_i = gln-L_c	abcde = abcde		F		
-gln-L_OUT	gln-L_c = gln-L_o	abcde = abcde		B		
+gln-L_IN	gln-L_i = gln-L_v	abcde = abcde		F		
+gln-L_OUT	gln-L_e = gln-L_o	abcde = abcde		B		
 glu-L_IN	glu-L_i = glu-L_v	abcde = abcde		F		
 glu-L_OUT	glu-L_e = glu-L_o	abcde = abcde		B		
 glucys_IN	glucys_i = glucys_c	abcdefgh = abcdefgh		F		
@@ -108,8 +108,11 @@ GHMT2r_R	gly_c + mlthf_c + h2o_c = ser-L_c + thf_c	ab + c + X = cab + X		R
 GLCmix	glc-D_v = glc-D_e	abcdef = abcdef		F	
 GLCtin	glc-D_v = glc-D_c	abcdef = abcdef		F	
 GLCtout	glc-D_r = glc-D_e	abcdef = abcdef		F	
+GLNmix	gln-L_v = gln-L_e	abcde = abcde		F	
 GLNS	glu-L_c + nh4_c + atp_c = gln-L_c + adp_c + pi_c + h_c	abcde + X + X = abcde + X + X + X		F	
+GLNtin	gln-L_v = gln-L_c	abcde = abcde		F	
 GLNtl	gln-L_l = gln-L_c	abcde = abcde		F		
+GLNtout	gln-L_c = gln-L_e	abcde = abcde		F	
 GLNtm	gln-L_c = gln-L_m	abcde = abcde		F		
 GLUDxm	glu-L_m + h2o_m + nad_m = akg_m + h_m + nadh_m + nh4_m	abcde + X + X = abcde + X + X + X		FR		
 GLUDxm_R	akg_m + h_m + nadh_m + nh4_m = glu-L_m + h2o_m + nad_m	abcde + X + X + X = abcde + X + X		R		
@@ -272,6 +275,7 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	glc-D_r#111111					
 #	glc-D_e#111111					
 #	gln-L_c#11111					
+#	gln-L_e#11111					
 #	gln-L_m#11111					
 #	glu-L_c#11111					
 #	glu-L_e#11111					

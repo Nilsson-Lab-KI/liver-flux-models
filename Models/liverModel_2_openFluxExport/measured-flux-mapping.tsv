@@ -7,7 +7,9 @@ arg-L_tot	arg-L_IN	1
 asp-L	ASPtin	-1
 asp-L	ASPtout	1
 asp-L_tot	asp-L_IN	1
-gln-L	gln-L_IN	-1
+gln-L	GLNtin	-1
+gln-L	GLNtout	1
+gln-L_tot	gln-L_IN	1
 gly	gly_IN	-1
 ser-L	ser-L_IN	-1
 ser-L	ser-L_OUT	1
@@ -22,11 +24,13 @@ urea	urea_OUT	1
 protdeg_ala	PROTDEG_ALA	1
 protdeg_arg	PROTDEG_ARG	1
 protdeg_asp	PROTDEG_ASP	1
+protdeg_gln	PROTDEG_GLN	1
 protdeg_glu	PROTDEG_GLU	1
 protdeg_ser	PROTDEG_SER	1
 protsyn_ala	PROTSYN_ALA	1
 protsyn_arg	PROTSYN_ARG	1
 protsyn_asp	PROTSYN_ASP	1
+protsyn_gln	PROTSYN_GLN	1
 protsyn_glu	PROTSYN_GLU	1
 protsyn_ser	PROTSYN_SER	1
 protsyn_atp	PROTSYN_ATP	1
