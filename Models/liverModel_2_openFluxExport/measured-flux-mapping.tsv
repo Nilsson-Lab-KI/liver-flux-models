@@ -41,3 +41,4 @@ protsyn_atp	PROTSYN_ATP	1
 atpases	ATPASES	1
 o2	o2_IN	1
 nadph_demand	NADPH_REDOX	1
+VLDL_TAG	glyc_OUT	1
