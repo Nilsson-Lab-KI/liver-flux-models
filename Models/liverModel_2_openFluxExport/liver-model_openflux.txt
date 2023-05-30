@@ -22,8 +22,8 @@ h2o_OUT	h2o_c = h2o_o	X = X		B
 h_IN	h_i = h_c	X = X		F		
 h_OUT	h_c = h_o	X = X		B		
 lac-L_OUT	lac-L_c = lac-L_o	abc = abc		B		
-mlthf_IN	mlthf_i = mlthf_c	X = X		F		
-mlthf_OUT	mlthf_c = mlthf_o	X = X		B		
+mlthf_IN	mlthf_i = mlthf_c	a = a		F		
+mlthf_OUT	mlthf_c = mlthf_o	a = a		B		
 nh4_IN	nh4_i = nh4_c	X = X		F		
 nh4_OUT	nh4_c = nh4_o	X = X		B		
 o2_IN	o2_i = o2_c	X = X		F		
@@ -56,32 +56,32 @@ AKGtm	akg_c = akg_m	abcde = abcde		FR
 AKGtm_R	akg_m = akg_c	abcde = abcde		R		
 ALATA_L	akg_c + ala-L_c = glu-L_c + pyr_c	abcde + fgh = abcde + fgh		FR		
 ALATA_L_R	glu-L_c + pyr_c = akg_c + ala-L_c	abcde + fgh = abcde + fgh		R		
-ALAmix	ala-L_v = ala-L_e	abc = abc		F	
+ALAmix	ala-L_v = ala-L_e	abc = abc		F		
 ALAtl	ala-L_l = ala-L_c	abc = abc		F		
-ALAtin	ala-L_v = ala-L_c	abc = abc		F	
-ALAtout	ala-L_c = ala-L_e	abc = abc		F	
+ALAtin	ala-L_v = ala-L_c	abc = abc		F		
+ALAtout	ala-L_c = ala-L_e	abc = abc		F		
 ARGN	arg-L_c + h2o_c = orn_c + urea_c	abcdef + X = abcde + f		F		
 ARGSL	argsuc_c = arg-L_c + 0.5 fum_c + 0.5 fum_c	abcdefghij = abcehj + 0.5 dfgi + 0.5 fdig		F		
 ARGSS	asp-L_c + citr-L_c + atp_c = argsuc_c + amp_c + h_c + ppi_c	abcd + efghij + X = efgahbcidj + X + X + X		F		
-ARGmix	arg-L_v = arg-L_e	abcdef = abcdef		F	
+ARGmix	arg-L_v = arg-L_e	abcdef = abcdef		F		
 ARGtl	arg-L_l = arg-L_c	abcdef = abcdef		F		
-ARGtin	arg-L_v = arg-L_c	abcdef = abcdef		F	
-ARGtout	arg-L_c = arg-L_e	abcdef = abcdef		F	
+ARGtin	arg-L_v = arg-L_c	abcdef = abcdef		F		
+ARGtout	arg-L_c = arg-L_e	abcdef = abcdef		F		
 ASPTA	akg_c + asp-L_c = glu-L_c + oaa_c	abcde + fghi = abcde + fghi		FR		
 ASPTA_R	glu-L_c + oaa_c = akg_c + asp-L_c	abcde + fghi = abcde + fghi		R		
 ASPTAm	glu-L_m + oaa_m = akg_m + asp-L_m	abcde + fghi = abcde + fghi		FR		
 ASPTAm_R	akg_m + asp-L_m = glu-L_m + oaa_m	abcde + fghi = abcde + fghi		R		
 ASPtl	asp-L_l = asp-L_c	abcd = abcd		F		
-ASPmix	asp-L_v = asp-L_e	abcd = abcd		F	
-ASPtin	asp-L_v = asp-L_c	abcd = abcd		F	
-ASPtout	asp-L_c = asp-L_e	abcd = abcd		F	
+ASPmix	asp-L_v = asp-L_e	abcd = abcd		F		
+ASPtin	asp-L_v = asp-L_c	abcd = abcd		F		
+ASPtout	asp-L_c = asp-L_e	abcd = abcd		F		
 ASPtm	asp-L_m = asp-L_c	abcd = abcd		FR		
 ASPtm_R	asp-L_c = asp-L_m	abcd = abcd		R		
 ATPS4m	adp_m + h_ims_m + h_ims_m + h_ims_m + h_ims_m + pi_m = atp_m + h2o_m + h_m + h_m + h_m	X + X + X + X + X + X = X + X + X + X + X		F		
 ATPtm	adp_c + atp_m = adp_m + atp_c	X + X = X + X		FR		
 ATPtm_R	adp_m + atp_c = adp_c + atp_m	X + X = X + X		R		
 CBPSam	hco3_m + atp_m + atp_m + nh4_m = cbp_m + adp_m + adp_m + h_m + h_m + pi_m	a + X + X + X = a + X + X + X + X + X		F		
-ATPASES	atp_c + h2o_c = adp_c + h_c + pi_c	X + X = X + X + X + X		F		
+ATPASES	atp_c + h2o_c = adp_c + h_c + pi_c	X + X = X + X + X 		F		
 CO2tm	co2_c = co2_m	a = a		FR		
 CO2tm_R	co2_m = co2_c	a = a		R		
 CSm	accoa_m + oaa_m + h2o_m = cit_m + coa_m + h_m	ab + cdef + X = caebfd + X + X		F		
@@ -104,14 +104,14 @@ GAPD	g3p_c + nad_c + pi_c = 13dpg_c + h_c + nadh_c	abc + X + X = bca + X + X		FR
 GAPD_R	13dpg_c + h_c + nadh_c = g3p_c + nad_c + pi_c	abc + X + X = cab + X + X		R		
 GHMT2r	ser-L_c + thf_c = gly_c + mlthf_c + h2o_c	abc + X = bc + a + X		FR		
 GHMT2r_R	gly_c + mlthf_c + h2o_c = ser-L_c + thf_c	ab + c + X = cab + X		R		
-GLCmix	glc-D_v = glc-D_e	abcdef = abcdef		F	
-GLCtin	glc-D_v = glc-D_c	abcdef = abcdef		F	
-GLCtout	glc-D_r = glc-D_e	abcdef = abcdef		F	
-GLNmix	gln-L_v = gln-L_e	abcde = abcde		F	
-GLNS	glu-L_c + nh4_c + atp_c = gln-L_c + adp_c + pi_c + h_c	abcde + X + X = abcde + X + X + X		F	
-GLNtin	gln-L_v = gln-L_c	abcde = abcde		F	
+GLCmix	glc-D_v = glc-D_e	abcdef = abcdef		F		
+GLCtin	glc-D_v = glc-D_c	abcdef = abcdef		F		
+GLCtout	glc-D_r = glc-D_e	abcdef = abcdef		F		
+GLNmix	gln-L_v = gln-L_e	abcde = abcde		F		
+GLNS	glu-L_c + nh4_c + atp_c = gln-L_c + adp_c + pi_c + h_c	abcde + X + X = abcde + X + X + X		F		
+GLNtin	gln-L_v = gln-L_c	abcde = abcde		F		
 GLNtl	gln-L_l = gln-L_c	abcde = abcde		F		
-GLNtout	gln-L_c = gln-L_e	abcde = abcde		F	
+GLNtout	gln-L_c = gln-L_e	abcde = abcde		F		
 GLNtm	gln-L_c = gln-L_m	abcde = abcde		F		
 GLUDxm	glu-L_m + h2o_m + nad_m = akg_m + h_m + nadh_m + nh4_m	abcde + X + X = abcde + X + X + X		FR		
 GLUDxm_R	akg_m + h_m + nadh_m + nh4_m = glu-L_m + h2o_m + nad_m	abcde + X + X + X = abcde + X + X		R		
@@ -119,13 +119,13 @@ GLUNm	gln-L_m + h2o_m = glu-L_m + nh4_m	abcde + X = abcde + X		F
 GLUtl	glu-L_l = glu-L_c	abcde = abcde		F		
 GLUt2m	glu-L_c = glu-L_m	abcde = abcde		FR		
 GLUt2m_R	glu-L_m = glu-L_c	abcde = abcde		R		
-GLUmix	glu-L_v = glu-L_e	abcde = abcde		F	
-GLUtin	glu-L_v = glu-L_c	abcde = abcde		F	
-GLUtout	glu-L_c = glu-L_e	abcde = abcde		F	
+GLUmix	glu-L_v = glu-L_e	abcde = abcde		F		
+GLUtin	glu-L_v = glu-L_c	abcde = abcde		F		
+GLUtout	glu-L_c = glu-L_e	abcde = abcde		F		
 GLYtl	gly_l = gly_c	ab = ab		F		
-GLYmix	gly_v = gly_e	ab = ab		F	
-GLYtin	gly_v = gly_c	ab = ab		F	
-GLYtout	gly_c = gly_e	ab = ab		F	
+GLYmix	gly_v = gly_e	ab = ab		F		
+GLYtin	gly_v = gly_c	ab = ab		F		
+GLYtout	gly_c = gly_e	ab = ab		F		
 GLYCOGEN_BREAK	glycogen_r + pi_r = g1p_r	abcdef + X = fedcba		F		
 GLYCPH	glyc3p_c + h2o_c = glyc_c + pi_c	abc + X = abc + X 		F		
 GND	6pgc_c + nadp_c = ru5p-D_c + co2_c + nadph_c	abcdef + X = eadbc + f + X		F		
@@ -148,7 +148,7 @@ MDH_R	oaa_c + h_c + nadh_c = mal-L_c + nad_c	abcd + X + X = abcd + X		R
 MDHm	mal-L_m + nad_m = oaa_m + h_m + nadh_m	abcd + X = abcd + X + X		FR		
 MDHm_R	oaa_m + h_m + nadh_m = mal-L_m + nad_m	abcd + X + X = abcd + X		R		
 NADH2-u10m	h_m + h_m + h_m + h_m + h_m + nadh_m + q10_m = h_ims_m + h_ims_m + h_ims_m + h_ims_m + nad_m + q10h2_m	X + X + X + X + X + X + X = X + X + X + X + X + X		F		
-NADPH_REDOX	nadph_c = h_c + nadp_c	X + X = X		F		
+NADPH_REDOX	nadph_c = h_c + nadp_c	X = X + X		F		
 NDPK1	atp_c + gdp_c = adp_c + gtp_c	X + X = X + X		F		
 NH4tm	nh4_c = nh4_m	X = X		FR		
 NH4tm_R	nh4_m = nh4_c	X = X		R		
@@ -197,10 +197,10 @@ PYRt2m_R	pyr_m = pyr_c	abc = abc		R
 RPE	ru5p-D_c = xu5p-D_c	abcde = abcde		F		
 RPI	ru5p-D_c = r5p_c	abcde = bdeca		F		
 SERHL	ser-L_c = 2amac_c + h2o_c	abc = abc + X		F		
-SERmix	ser-L_v = ser-L_e	abc = abc		F	
+SERmix	ser-L_v = ser-L_e	abc = abc		F		
 SERtl	ser-L_l = ser-L_c	abc = abc		F		
-SERtin	ser-L_v = ser-L_c	abc = abc		F	
-SERtout	ser-L_c = ser-L_e	abc = abc		F	
+SERtin	ser-L_v = ser-L_c	abc = abc		F		
+SERtout	ser-L_c = ser-L_e	abc = abc		F		
 SUCD1m	succ_m + q10_m = 0.5 fum_m + 0.5 fum_m + q10h2_m	abcd + X = 0.5 badc + 0.5 abcd + X		F		
 SUCOASm	succoa_m + adp_m + pi_m = 0.5 succ_m + 0.5 succ_m + atp_m + coa_m	abcd + X + X = 0.5 badc + 0.5 abcd + X + X		F		
 TALA	g3p_c + s7p_c = f6p_c + e4p_c	abc + defghij = bdcahf + jeig		F		
@@ -226,7 +226,6 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	glu-L_o					
 #	gly_i					
 #	gly_o					
-#	glyc_i					
 #	glyc_o					
 #	glycogen_i					
 #	gthrd_o					
@@ -235,8 +234,8 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	h_i					
 #	h_o					
 #	lac-L_o					
-#	mlthf_i
-#	mlthf_o
+#	mlthf_i					
+#	mlthf_o					
 #	nh4_i					
 #	nh4_o					
 #	o2_i					
@@ -252,15 +251,17 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	prot_glu_o					
 #	prot_gln_i					
 #	prot_gln_o					
+#	prot_gly_i					
+#	prot_gly_o					
 #	prot_ser_i					
 #	prot_ser_o					
 #	ser-L_i					
-#	ser-L_o				
-#	thf_i
-#	thf_o
+#	ser-L_o					
+#	thf_i					
+#	thf_o					
 #	urea_o					
 						
-##	simulatedMDVs									
+##	simulatedMDVs					
 #	ala-L_c#111					
 #	ala-L_e#111					
 #	ala-L_l#111					
@@ -290,8 +291,8 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	mal-L_m#1111					
 #	orn_c#11111					
 #	orn_m#11111					
-#	ser-L_c#111									
-#	ser-L_e#111									
+#	ser-L_c#111					
+#	ser-L_e#111					
 						
 ##	inputSubstrates					
 #	ala-L_i					
@@ -299,10 +300,11 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	asp-L_i					
 #	co2_i					
 #	glc-D_i					
+#	glu-L_i					
 #	gln-L_i					
 #	gly_i					
-#	glyc_i					
 #	glycogen_i					
+#	mlthf_i					
 #	prot_ala_i					
 #	prot_arg_i					
 #	prot_asp_i					
