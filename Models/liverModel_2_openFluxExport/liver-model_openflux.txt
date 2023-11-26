@@ -280,19 +280,23 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	glc-D_e#111111					
 #	gln-L_c#11111					
 #	gln-L_e#11111					
+#	gln-L_l#11111					
 #	gln-L_m#11111					
 #	glu-L_c#11111					
 #	glu-L_e#11111					
+#	glu-L_l#11111					
 #	glu-L_m#11111					
 #	gly_c#11					
 #	gly_e#11					
+#	gly_l#11					
 #	glyc3p_c#111					
 #	mal-L_c#1111					
 #	mal-L_m#1111					
 #	orn_c#11111					
 #	orn_m#11111					
-#	ser-L_c#111					
-#	ser-L_e#111					
+#	ser-L_c#111									
+#	ser-L_e#111									
+#	ser-L_l#111									
 						
 ##	inputSubstrates					
 #	ala-L_i					
