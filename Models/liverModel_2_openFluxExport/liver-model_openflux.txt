@@ -47,8 +47,8 @@ thf_IN	thf_i = thf_c	X = X		F
 thf_OUT	thf_c = thf_o	X = X		B		
 urea_OUT	urea_c = urea_o	a = a		B		
 2AMACHYD	2amac_c + h2o_c = pyr_c + nh4_c	abc + X = abc + X		F		
-ACONTm	cit_m = icit_m	abcdef = bfdaec		FR		
-ACONTm_R	icit_m = cit_m	abcdef = dafceb		R		
+ACONTm	cit_m = icit_m	abcdef = afcbed		FR		
+ACONTm_R	icit_m = cit_m	abcdef = adcfeb		R		
 ADK1	amp_c + atp_c = adp_c + adp_c	X + X = X + X		F		
 AKGDm	akg_m + coa_m + nad_m = co2_m + succoa_m + nadh_m	abcde + X + X = e + badc + X		FR		
 AKGDm_R	co2_m + succoa_m + nadh_m = akg_m + coa_m + nad_m	a + bcde + X = cbeda + X + X		R		
@@ -280,19 +280,23 @@ TPI_R	g3p_c = dhap_c	abc = abc		R
 #	glc-D_e#111111					
 #	gln-L_c#11111					
 #	gln-L_e#11111					
+#	gln-L_l#11111					
 #	gln-L_m#11111					
 #	glu-L_c#11111					
 #	glu-L_e#11111					
+#	glu-L_l#11111					
 #	glu-L_m#11111					
 #	gly_c#11					
 #	gly_e#11					
+#	gly_l#11					
 #	glyc3p_c#111					
 #	mal-L_c#1111					
 #	mal-L_m#1111					
 #	orn_c#11111					
 #	orn_m#11111					
-#	ser-L_c#111					
-#	ser-L_e#111					
+#	ser-L_c#111									
+#	ser-L_e#111									
+#	ser-L_l#111									
 						
 ##	inputSubstrates					
 #	ala-L_i					
