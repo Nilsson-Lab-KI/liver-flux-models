@@ -16,7 +16,7 @@ glu-L_OUT	glu-L_e = glu-L_o	abcde = abcde		B
 gly_IN	gly_i = gly_v	ab = ab		F		
 gly_OUT	gly_e = gly_o	ab = ab		B		
 glyc_OUT	glyc_c = glyc_o	abc = abc		B		
-glycogen_IN	glycogen_i = glycogen_r	abcdef = abcdef		F		
+glycogen_IN	glycogen_i = glycogen_c	abcdef = abcdef		F		
 h2o_IN	h2o_i = h2o_c	X = X		F		
 h2o_OUT	h2o_c = h2o_o	X = X		B		
 h_IN	h_i = h_c	X = X		F		
@@ -122,10 +122,10 @@ GLNtl	gln-L_l = gln-L_c	abcde = abcde		F
 GLNtout	gln-L_c = gln-L_e	abcde = abcde		F		
 GLNtm	gln-L_c = gln-L_m	abcde = abcde		FR		
 GLNtm_R	gln-L_m = gln-L_c	abcde = abcde		R		
+GLNS	glu-L_c + nh4_c + atp_c = gln-L_c + adp_c + pi_c + h_c	abcde + X + X = abcde + X + X + X		F		
 GLUDxm	glu-L_m + h2o_m + nad_m = akg_m + h_m + nadh_m + nh4_m	abcde + X + X = abcde + X + X + X		FR		
 GLUDxm_R	akg_m + h_m + nadh_m + nh4_m = glu-L_m + h2o_m + nad_m	abcde + X + X + X = abcde + X + X		R		
-GLUNm	gln-L_m + h2o_m = glu-L_m + nh4_m	abcde + X = abcde + X		FR		
-GLUNm_R	glu-L_m + nh4_m = gln-L_m + h2o_m	abcde + X = abcde + X		R		
+GLUNm	gln-L_m + h2o_m = glu-L_m + nh4_m	abcde + X = abcde + X		F		
 GLUtl	glu-L_l = glu-L_c	abcde = abcde		F		
 GLUt2m	glu-L_c = glu-L_m	abcde = abcde		FR		
 GLUt2m_R	glu-L_m = glu-L_c	abcde = abcde		R		
@@ -136,11 +136,10 @@ GLYtl	gly_l = gly_c	ab = ab		F
 GLYmix	gly_v = gly_e	ab = ab		F		
 GLYtin	gly_v = gly_c	ab = ab		F		
 GLYtout	gly_c = gly_e	ab = ab		F		
-GLYCOGEN_BREAK	glycogen_r + pi_r = g1p_r	abcdef + X = fedcba		F		
+GLYCOGEN_BREAK	glycogen_c + pi_c = g1p_c	abcdef + X = fedcba		F		
 GLYCPH	glyc3p_c + h2o_c = glyc_c + pi_c	abc + X = abc + X 		F		
 GND	6pgc_c + nadp_c = ru5p-D_c + co2_c + nadph_c	abcdef + X = eadbc + f + X		F		
-H2Oter	h2o_c = h2o_r	X = X		FR		
-H2Oter_R	h2o_r = h2o_c	X = X		R		
+H2Oter	h2o_c = h2o_r	X = X		F			
 H2Otm	h2o_c = h2o_m	X = X		FR		
 H2Otm_R	h2o_m = h2o_c	X = X		R		
 HCO3Em	co2_m + h2o_m = hco3_m + h_m	a + X = a + X		F		
@@ -179,10 +178,9 @@ PGK_R	3pg_c + atp_c = 13dpg_c + adp_c	abc + X = abc + X		R
 PGL	6pgl_c + h2o_c = 6pgc_c + h_c	abcdef + X = abcdef + X		F		
 PGM	3pg_c = 2pg_c	abc = abc		FR		
 PGM_R	2pg_c = 3pg_c	abc = abc		R		
-PGMTer	g1p_r = g6p_r	abcdef = abcdef		F		
+PGMT	g1p_c = g6p_c	abcdef = abcdef		F		
 PIt2m	pi_c = pi_m	X = X		F		
-PIter	pi_c = pi_r	X = X		FR		
-PIter_R	pi_r = pi_c	X = X		R		
+PIter	pi_r = pi_c	X = X		F		
 PPA	h2o_c + ppi_c = h_c + pi_c + pi_c	X + X = X + X + X		F		
 PMTtm	pmt_c = pmt_m	abcdefghijklmnop = abcdefghijklmnop		F		
 PMTCOAT	pmt_m + coa_m = pmtcoa_m	abcdefghijklmnop + X = abcdefghijklmnop		F		
