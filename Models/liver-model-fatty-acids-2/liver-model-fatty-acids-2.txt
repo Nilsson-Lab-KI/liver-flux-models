@@ -1,0 +1,335 @@
+RxnID	rxnEq	rxnCTrans	rates	rxnType	basis	deviation
+ala-L_IN	ala-L_i = ala-L_v	abc = abc		F		
+ala-L_OUT	ala-L_e = ala-L_o	abc = abc		F		
+arg-L_IN	arg-L_i = arg-L_v	abcdef = abcdef		F		
+arg-L_OUT	arg-L_e = arg-L_o	abcdef = abcdef		B		
+asp-L_IN	asp-L_i = asp-L_v	abcd = abcd		F		
+asp-L_OUT	asp-L_e = asp-L_o	abcd = abcd		B		
+co2_IN	co2_i = co2_c	a = a		F		
+co2_OUT	co2_c = co2_o	a = a		B		
+glc-D_IN	glc-D_i = glc-D_v	abcdef = abcdef		F		
+glc-D_OUT	glc-D_e = glc-D_o	abcdef = abcdef		B		
+gln-L_IN	gln-L_i = gln-L_v	abcde = abcde		F		
+gln-L_OUT	gln-L_e = gln-L_o	abcde = abcde		B		
+glu-L_IN	glu-L_i = glu-L_v	abcde = abcde		F		
+glu-L_OUT	glu-L_e = glu-L_o	abcde = abcde		B		
+gly_IN	gly_i = gly_v	ab = ab		F		
+gly_OUT	gly_e = gly_o	ab = ab		B		
+glyc_OUT	glyc_c = glyc_o	abc = abc		B		
+glycogen_IN	glycogen_i = glycogen_c	abcdef = abcdef		F		
+h2o_IN	h2o_i = h2o_c	X = X		F		
+h2o_OUT	h2o_c = h2o_o	X = X		B		
+h_IN	h_i = h_c	X = X		F		
+h_OUT	h_c = h_o	X = X		B		
+lac-L_OUT	lac-L_c = lac-L_o	abc = abc		B		
+mlthf_IN	mlthf_i = mlthf_c	a = a		F		
+mlthf_OUT	mlthf_c = mlthf_o	a = a		B		
+nh4_IN	nh4_i = nh4_c	X = X		F		
+nh4_OUT	nh4_c = nh4_o	X = X		B		
+o2_IN	o2_i = o2_c	X = X		F		
+pmt_IN	pmt_i = pmt_c	abcdefghijklmnop = abcdefghijklmnop		F		
+prot_ala_IN	prot_ala_i = prot_ala_l	abc = abc		F		
+prot_ala_OUT	prot_ala_c = prot_ala_o	abc = abc		B		
+prot_arg_IN	prot_arg_i = prot_arg_l	abcdef = abcdef		F		
+prot_arg_OUT	prot_arg_c = prot_arg_o	abcdef = abcdef		b		
+prot_asp_IN	prot_asp_i = prot_asp_l	abcd = abcd		F		
+prot_asp_OUT	prot_asp_c = prot_asp_o	abcd = abcd		B		
+prot_gln_IN	prot_gln_i = prot_gln_l	abcde = abcde		F		
+prot_gln_OUT	prot_gln_c = prot_gln_o	abcde = abcde		B		
+prot_glu_IN	prot_glu_i = prot_glu_l	abcde = abcde		F		
+prot_glu_OUT	prot_glu_c = prot_glu_o	abcde = abcde		B		
+prot_gly_IN	prot_gly_i = prot_gly_l	ab = ab		F		
+prot_gly_OUT	prot_gly_c = prot_gly_o	ab = ab		B		
+prot_ser_IN	prot_ser_i = prot_ser_l	abc = abc		F		
+prot_ser_OUT	prot_ser_c = prot_ser_o	abc = abc		B		
+ser-L_IN	ser-L_i = ser-L_v	abc = abc		F		
+ser-L_OUT	ser-L_e = ser-L_o	abc = abc		B		
+thf_IN	thf_i = thf_c	X = X		F		
+thf_OUT	thf_c = thf_o	X = X		B		
+urea_OUT	urea_c = urea_o	a = a		B		
+2AMACHYD	2amac_c + h2o_c = pyr_c + nh4_c	abc + X = abc + X		F		
+ACONTm	cit_m = icit_m	abcdef = afcbed		FR		
+ACONTm_R	icit_m = cit_m	abcdef = adcfeb		R		
+ADK1	amp_c + atp_c = adp_c + adp_c	X + X = X + X		F		
+AKGDm	akg_m + coa_m + nad_m = co2_m + succoa_m + nadh_m	abcde + X + X = e + badc + X		FR		
+AKGDm_R	co2_m + succoa_m + nadh_m = akg_m + coa_m + nad_m	a + bcde + X = cbeda + X + X		R		
+AKGtm	akg_c = akg_m	abcde = abcde		FR		
+AKGtm_R	akg_m = akg_c	abcde = abcde		R		
+ALATA_L	akg_c + ala-L_c = glu-L_c + pyr_c	abcde + fgh = abcde + fgh		FR		
+ALATA_L_R	glu-L_c + pyr_c = akg_c + ala-L_c	abcde + fgh = abcde + fgh		R		
+ALAmix	ala-L_v = ala-L_e	abc = abc		F		
+ALAtl	ala-L_l = ala-L_c	abc = abc		F		
+ALAtin	ala-L_v = ala-L_c	abc = abc		F		
+ALAtout	ala-L_c = ala-L_e	abc = abc		F		
+ARGN	arg-L_c + h2o_c = orn_c + urea_c	abcdef + X = abcde + f		F		
+ARGSL	argsuc_c = arg-L_c + 0.5 fum_c + 0.5 fum_c	abcdefghij = abcehj + 0.5 dfgi + 0.5 fdig		F		
+ARGSS	asp-L_c + citr-L_c + atp_c = argsuc_c + amp_c + h_c + ppi_c	abcd + efghij + X = efgahbcidj + X + X + X		F		
+ARGmix	arg-L_v = arg-L_e	abcdef = abcdef		F		
+ARGtl	arg-L_l = arg-L_c	abcdef = abcdef		F		
+ARGtin	arg-L_v = arg-L_c	abcdef = abcdef		F		
+ARGtout	arg-L_c = arg-L_e	abcdef = abcdef		F		
+ASPTA	akg_c + asp-L_c = glu-L_c + oaa_c	abcde + fghi = abcde + fghi		FR		
+ASPTA_R	glu-L_c + oaa_c = akg_c + asp-L_c	abcde + fghi = abcde + fghi		R		
+ASPTAm	glu-L_m + oaa_m = akg_m + asp-L_m	abcde + fghi = abcde + fghi		FR		
+ASPTAm_R	akg_m + asp-L_m = glu-L_m + oaa_m	abcde + fghi = abcde + fghi		R		
+ASPtl	asp-L_l = asp-L_c	abcd = abcd		F		
+ASPmix	asp-L_v = asp-L_e	abcd = abcd		F		
+ASPtin	asp-L_v = asp-L_c	abcd = abcd		F		
+ASPtout	asp-L_c = asp-L_e	abcd = abcd		F		
+ASPtm	asp-L_m = asp-L_c	abcd = abcd		FR		
+ASPtm_R	asp-L_c = asp-L_m	abcd = abcd		R		
+ATPS4m	adp_m + h_ims_m + h_ims_m + h_ims_m + h_ims_m + pi_m = atp_m + h2o_m + h_m + h_m + h_m	X + X + X + X + X + X = X + X + X + X + X		F		
+ATPtm	adp_c + atp_m = adp_m + atp_c	X + X = X + X		FR		
+ATPtm_R	adp_m + atp_c = adp_c + atp_m	X + X = X + X		R		
+CBPSam	hco3_m + atp_m + atp_m + nh4_m = cbp_m + adp_m + adp_m + h_m + h_m + pi_m	a + X + X + X = a + X + X + X + X + X		F		
+ATPASES	atp_c + h2o_c = adp_c + h_c + pi_c	X + X = X + X + X 		F		
+CO2tm	co2_c = co2_m	a = a		FR		
+CO2tm_R	co2_m = co2_c	a = a		R		
+CSm	accoa_m + oaa_m + h2o_m = cit_m + coa_m + h_m	ab + cdef + X = caebfd + X + X		F		
+CYOOm	focytC_m + focytC_m + focytC_m + focytC_m + h_m + h_m + h_m + h_m + h_m + h_m + h_m + h_m + o2_m = ficytC_m + ficytC_m + ficytC_m + ficytC_m + h2o_m + h2o_m + h_ims_m + h_ims_m + h_ims_m + h_ims_m	X + X + X + X + X + X + X + X + X + X + X + X + X = X + X + X + X + X + X + X + X + X + X		F		
+CYOR-u10m	ficytC_m + ficytC_m + h_m + h_m + q10h2_m = focytC_m + focytC_m + h_ims_m + h_ims_m + h_ims_m + h_ims_m + q10_m	X + X + X + X + X = X + X + X + X + X + X + X		F		
+ENO	2pg_c = pep_c + h2o_c	abc = abc + X		FR		
+ENO_R	pep_c + h2o_c = 2pg_c	abc + X = abc		R		
+ETF	fadh2_m + q10_m = fad_m + q10h2_m	X + X = X + X		F		
+FAO16	pmtcoa_m + coa_m + nad_m + fad_m + h2o_m = tdcoa_m + accoa_m + nadh_m + fadh2_m + h_m	abcdefghijklmnop + X + X + X + X = abcdefghijklmn + op + X + X + X		F		
+FAO14	tdcoa_m + coa_m + nad_m + fad_m + h2o_m = ddcacoa_m + accoa_m + nadh_m + fadh2_m + h_m	abcdefghijklmn + X + X + X + X = abcdefghijkl + mn + X + X + X		F		
+FAO12	ddcacoa_m + coa_m + nad_m + fad_m + h2o_m = dcacoa_m + accoa_m + nadh_m + fadh2_m + h_m	abcdefghijkl + X + X + X + X = abcdefghij + kl + X + X + X		F		
+FAO10	dcacoa_m + coa_m + nad_m + fad_m + h2o_m = occoa_m + accoa_m + nadh_m + fadh2_m + h_m	abcdefghij + X + X + X + X = abcdefgh + ij + X + X + X		F		
+FAO8	occoa_m + coa_m + nad_m + fad_m + h2o_m = hexcoa_m + accoa_m + nadh_m + fadh2_m + h_m	abcdefgh + X + X + X + X = abcdef + gh + X + X + X		F		
+FAO6	hexcoa_m + coa_m + nad_m + fad_m + h2o_m = btcoa_m + accoa_m + nadh_m + fadh2_m + h_m	abcdef + X + X + X + X = abcd + ef + X + X + X		F		
+FAO4	btcoa_m + coa_m + nad_m + fad_m + h2o_m = accoa_m + accoa_m + nadh_m + fadh2_m + h_m	abcd + X + X + X + X = ab + cd + X + X + X		F		
+FBA	fdp_c = dhap_c + g3p_c	abcdef = ebf + dac		FR		
+FBA_R	dhap_c + g3p_c = fdp_c	abc + def = ebfdac		R		
+FBP	fdp_c + h2o_c = f6p_c + pi_c	abcdef + X = abcdef + X		F		
+FUMm	fum_m + h2o_m = mal-L_m	abcd + X = abcd		F		
+FUMtm	fum_c = 0.5 fum_m + 0.5 fum_m	abcd = 0.5 abcd + 0.5 badc		F		
+G3PD1	dhap_c + nadh_c + h_c = glyc3p_c + nad_c	abc + X + X = abc + X		F		
+G5SDxm	glu5sa_m + nad_m + h2o_m = glu-L_m + nadh_m + h_m + h_m	abcde + X + X = abcde + X + X + X		F		
+G6PDH2r	g6p_c + nadp_c = 6pgl_c + h_c + nadph_c	abcdef + X = abcdef + X + X		F		
+G6PPer	g6p_r + h2o_r = glc-D_r + pi_r	abcdef + X = abcdef + X		F		
+G6Pter	g6p_c = g6p_r	abcdef = abcdef		FR		
+G6Pter_R	g6p_r = g6p_c	abcdef = abcdef		R		
+GAPD	g3p_c + nad_c + pi_c = 13dpg_c + h_c + nadh_c	abc + X + X = bca + X + X		FR		
+GAPD_R	13dpg_c + h_c + nadh_c = g3p_c + nad_c + pi_c	abc + X + X = cab + X + X		R		
+GHMT2r	ser-L_c + thf_c = gly_c + mlthf_c + h2o_c	abc + X = bc + a + X		FR		
+GHMT2r_R	gly_c + mlthf_c + h2o_c = ser-L_c + thf_c	ab + c + X = cab + X		R		
+GLCmix	glc-D_v = glc-D_e	abcdef = abcdef		F		
+GLCtin	glc-D_v = glc-D_c	abcdef = abcdef		F		
+GLCtout	glc-D_r = glc-D_e	abcdef = abcdef		F		
+GLNmix	gln-L_v = gln-L_e	abcde = abcde		F		
+GLNtin	gln-L_v = gln-L_c	abcde = abcde		F		
+GLNtl	gln-L_l = gln-L_c	abcde = abcde		F		
+GLNtout	gln-L_c = gln-L_e	abcde = abcde		F		
+GLNtm	gln-L_c = gln-L_m	abcde = abcde		FR		
+GLNtm_R	gln-L_m = gln-L_c	abcde = abcde		R		
+GLNS	glu-L_c + nh4_c + atp_c = gln-L_c + adp_c + pi_c + h_c	abcde + X + X = abcde + X + X + X		F		
+GLUDxm	glu-L_m + h2o_m + nad_m = akg_m + h_m + nadh_m + nh4_m	abcde + X + X = abcde + X + X + X		FR		
+GLUDxm_R	akg_m + h_m + nadh_m + nh4_m = glu-L_m + h2o_m + nad_m	abcde + X + X + X = abcde + X + X		R		
+GLUNm	gln-L_m + h2o_m = glu-L_m + nh4_m	abcde + X = abcde + X		F		
+GLUtl	glu-L_l = glu-L_c	abcde = abcde		F		
+GLUt2m	glu-L_c = glu-L_m	abcde = abcde		FR		
+GLUt2m_R	glu-L_m = glu-L_c	abcde = abcde		R		
+GLUmix	glu-L_v = glu-L_e	abcde = abcde		F		
+GLUtin	glu-L_v = glu-L_c	abcde = abcde		F		
+GLUtout	glu-L_c = glu-L_e	abcde = abcde		F		
+GLYtl	gly_l = gly_c	ab = ab		F		
+GLYmix	gly_v = gly_e	ab = ab		F		
+GLYtin	gly_v = gly_c	ab = ab		F		
+GLYtout	gly_c = gly_e	ab = ab		F		
+GLYCOGEN_BREAK	glycogen_c + pi_c = g1p_c	abcdef + X = fedcba		F		
+GLYCPH	glyc3p_c + h2o_c = glyc_c + pi_c	abc + X = abc + X 		F		
+GND	6pgc_c + nadp_c = ru5p-D_c + co2_c + nadph_c	abcdef + X = eadbc + f + X		F		
+H2Oter	h2o_c = h2o_r	X = X		F			
+H2Otm	h2o_c = h2o_m	X = X		FR		
+H2Otm_R	h2o_m = h2o_c	X = X		R		
+HCO3Em	co2_m + h2o_m = hco3_m + h_m	a + X = a + X		F		
+HEX1	glc-D_c + atp_c = g6p_c + adp_c + h_c	abcdef + X = abcdef + X + X		F		
+Htm2	h_m = h_c	X = X		FR		
+Htm2_R	h_c = h_m	X = X		R		
+ICDHxm	icit_m + nad_m = akg_m + co2_m + nadh_m	abcdef + X = bdafc + e + X		FR		
+ICDHxm_R	akg_m + co2_m + nadh_m = icit_m + nad_m	abcde + f + X = caebfd + X		R		
+LDH_L	pyr_c + h_c + nadh_c = lac-L_c + nad_c	abc + X + X = abc + X		FR		
+LDH_L_R	lac-L_c + nad_c = pyr_c + h_c + nadh_c	abc + X = abc + X + X		R		
+MALtm	mal-L_c = mal-L_m	abcd = abcd		FR		
+MALtm_R	mal-L_m = mal-L_c	abcd = abcd		R		
+MDH	mal-L_c + nad_c = oaa_c + h_c + nadh_c	abcd + X = abcd + X + X		FR		
+MDH_R	oaa_c + h_c + nadh_c = mal-L_c + nad_c	abcd + X + X = abcd + X		R		
+MDHm	mal-L_m + nad_m = oaa_m + h_m + nadh_m	abcd + X = abcd + X + X		FR		
+MDHm_R	oaa_m + h_m + nadh_m = mal-L_m + nad_m	abcd + X + X = abcd + X		R		
+NADH2-u10m	h_m + h_m + h_m + h_m + h_m + nadh_m + q10_m = h_ims_m + h_ims_m + h_ims_m + h_ims_m + nad_m + q10h2_m	X + X + X + X + X + X + X = X + X + X + X + X + X		F		
+NADPH_REDOX	nadph_c + nadph_c + o2_c = nadp_c + nadp_c + h2o_c	X + X + X = X + X + X		F		
+NDPK1	atp_c + gdp_c = adp_c + gtp_c	X + X = X + X		F		
+NH4tm	nh4_c = nh4_m	X = X		FR		
+NH4tm_R	nh4_m = nh4_c	X = X		R		
+O2tm	o2_c = o2_m	X = X		F		
+ORNTArm	orn_m + akg_m = glu5sa_m + glu-L_m	abcde + fghij = abcde + fghij		F		
+OCBTm	cbp_m + orn_m = citr-L_m + h_m + pi_m	a + bcdef = bcdefa + X + X		F		
+ORNtm	orn_c = orn_m	abcde = abcde		F		
+ORNt4m	citr-L_m + orn_c = citr-L_c + orn_m	abcdef + ghijk = abcdef + ghijk		F		
+PCm	hco3_m + pyr_m + atp_m = oaa_m + adp_m + h_m + pi_m	a + bcd + X = bcad + X + X + X		F		
+PDHm	pyr_m + coa_m + nad_m = accoa_m + co2_m + nadh_m	abc + X + X = ab + c + X		F		
+PEPCK	oaa_c + gtp_c = co2_c + pep_c + gdp_c	abcd + X = c + abd + X		F		
+PFK	f6p_c + atp_c = fdp_c + adp_c + h_c	abcdef + X = abcdef + X + X		F		
+PGCD	3pg_c + nad_c = 3php_c + h_c + nadh_c	abc + X = abc + X + X		F		
+PGI	g6p_c = f6p_c	abcdef = afbcde		FR		
+PGI_R	f6p_c = g6p_c	abcdef = acdefb		R		
+PGK	13dpg_c + adp_c = 3pg_c + atp_c	abc + X = abc + X		FR		
+PGK_R	3pg_c + atp_c = 13dpg_c + adp_c	abc + X = abc + X		R		
+PGL	6pgl_c + h2o_c = 6pgc_c + h_c	abcdef + X = abcdef + X		F		
+PGM	3pg_c = 2pg_c	abc = abc		FR		
+PGM_R	2pg_c = 3pg_c	abc = abc		R		
+PGMT	g1p_c = g6p_c	abcdef = abcdef		F		
+PIt2m	pi_c = pi_m	X = X		F		
+PIter	pi_r = pi_c	X = X		F		
+PPA	h2o_c + ppi_c = h_c + pi_c + pi_c	X + X = X + X + X		F		
+PMTtm	pmt_c = pmt_m	abcdefghijklmnop = abcdefghijklmnop		F		
+PMTCOAT	pmt_m + coa_m = pmtcoa_m	abcdefghijklmnop + X = abcdefghijklmnop		F		
+PROTDEG_ALA	prot_ala_l = ala-L_l	abc = abc		F		
+PROTDEG_ARG	prot_arg_l = arg-L_l	abcdef = abcdef		F		
+PROTDEG_ASP	prot_asp_l = asp-L_l	abcd = abcd		F		
+PROTDEG_GLN	prot_gln_l = gln-L_l	abcde = abcde		F		
+PROTDEG_GLU	prot_glu_l = glu-L_l	abcde = abcde		F		
+PROTDEG_GLY	prot_gly_l = gly_l	ab = ab		F		
+PROTDEG_SER	prot_ser_l = ser-L_l	abc = abc		F		
+PROTSYN_ALA	ala-L_c = prot_ala_c	abc = abc		F		
+PROTSYN_ARG	arg-L_c = prot_arg_c	abcdef = abcdef		F		
+PROTSYN_ASP	asp-L_c = prot_asp_c	abcd = abcd		F		
+PROTSYN_GLN	gln-L_c = prot_gln_c	abcde = abcde		F		
+PROTSYN_GLU	glu-L_c = prot_glu_c	abcde = abcde		F		
+PROTSYN_GLY	gly_c = prot_gly_c	ab = ab		F		
+PROTSYN_SER	ser-L_c = prot_ser_c	abc = abc		F		
+PROTSYN_ATP	4 atp_c + 4 h2o_c = 4 adp_c + 4 pi_c + 4 h_c	X + X = X + X + X		F		
+PSERT	3php_c + glu-L_c = akg_c + pser-L_c	abc + defgh = defgh + abc		F		
+PSP_L	pser-L_c + h2o_c = ser-L_c + pi_c	abc + X = abc + X		F		
+PYK	pep_c + adp_c + h_c = pyr_c + atp_c	abc + X + X = abc + X		F		
+PYRt2m	pyr_c = pyr_m	abc = abc		FR		
+PYRt2m_R	pyr_m = pyr_c	abc = abc		R		
+RPE	ru5p-D_c = xu5p-D_c	abcde = abcde		F		
+RPI	ru5p-D_c = r5p_c	abcde = bdeca		F		
+SERHL	ser-L_c = 2amac_c + h2o_c	abc = abc + X		F		
+SERmix	ser-L_v = ser-L_e	abc = abc		F		
+SERtl	ser-L_l = ser-L_c	abc = abc		F		
+SERtin	ser-L_v = ser-L_c	abc = abc		F		
+SERtout	ser-L_c = ser-L_e	abc = abc		F		
+SUCD1m	succ_m + q10_m = 0.5 fum_m + 0.5 fum_m + q10h2_m	abcd + X = 0.5 badc + 0.5 abcd + X		F		
+SUCOASm	succoa_m + adp_m + pi_m = 0.5 succ_m + 0.5 succ_m + atp_m + coa_m	abcd + X + X = 0.5 badc + 0.5 abcd + X + X		F		
+TALA	g3p_c + s7p_c = f6p_c + e4p_c	abc + defghij = bdcahf + jeig		F		
+TKT1	r5p_c + xu5p-D_c = s7p_c + g3p_c	abcde + fghij = fahbecd + jgi		F		
+TKT2	e4p_c + xu5p-D_c = f6p_c + g3p_c	abcd + efghi = bedcag + ifh		F		
+TPI	dhap_c = g3p_c	abc = abc		FR		
+TPI_R	g3p_c = dhap_c	abc = abc		R		
+						
+##	excludedMetabolites					
+#	ala-L_i					
+#	ala-L_o					
+#	arg-L_i					
+#	arg-L_o					
+#	asp-L_i					
+#	asp-L_o					
+#	co2_i					
+#	co2_o					
+#	glc-D_i					
+#	glc-D_o					
+#	gln-L_i					
+#	gln-L_o					
+#	glu-L_i					
+#	glu-L_o					
+#	gly_i					
+#	gly_o					
+#	glyc_o					
+#	glycogen_i					
+#	gthrd_o					
+#	h2o_i					
+#	h2o_o					
+#	h_i					
+#	h_o					
+#	lac-L_o					
+#	mlthf_i					
+#	mlthf_o					
+#	nh4_i					
+#	nh4_o					
+#	o2_i					
+#	pi_i					
+#	pi_o					
+#	pmt_i
+#	prot_ala_i					
+#	prot_ala_o					
+#	prot_arg_i					
+#	prot_arg_o					
+#	prot_asp_i					
+#	prot_asp_o					
+#	prot_glu_i					
+#	prot_glu_o					
+#	prot_gln_i					
+#	prot_gln_o					
+#	prot_gly_i					
+#	prot_gly_o					
+#	prot_ser_i					
+#	prot_ser_o					
+#	ser-L_i					
+#	ser-L_o					
+#	thf_i					
+#	thf_o					
+#	urea_o					
+						
+##	simulatedMDVs					
+#	ala-L_c#111					
+#	ala-L_e#111					
+#	ala-L_l#111					
+#	arg-L_c#111111					
+#	arg-L_e#111111					
+#	arg-L_l#111111					
+#	asp-L_c#1111					
+#	asp-L_e#1111					
+#	asp-L_l#1111					
+#	asp-L_m#1111					
+#	cit_m#111111					
+#	citr-L_c#111111					
+#	citr-L_m#111111					
+#	glc-D_c#111111					
+#	glc-D_r#111111					
+#	glc-D_e#111111					
+#	gln-L_c#11111					
+#	gln-L_e#11111					
+#	gln-L_l#11111					
+#	gln-L_m#11111					
+#	glu-L_c#11111					
+#	glu-L_e#11111					
+#	glu-L_l#11111					
+#	glu-L_m#11111					
+#	gly_c#11					
+#	gly_e#11					
+#	gly_l#11					
+#	glyc3p_c#111					
+#	mal-L_c#1111					
+#	mal-L_m#1111					
+#	orn_c#11111					
+#	orn_m#11111					
+#	ser-L_c#111									
+#	ser-L_e#111									
+#	ser-L_l#111									
+						
+##	inputSubstrates					
+#	ala-L_i					
+#	arg-L_i					
+#	asp-L_i					
+#	co2_i					
+#	glc-D_i					
+#	glu-L_i					
+#	gln-L_i					
+#	gly_i					
+#	glycogen_i					
+#	mlthf_i					
+#	pmt_i
+#	prot_ala_i					
+#	prot_arg_i					
+#	prot_asp_i					
+#	prot_gln_i					
+#	prot_glu_i					
+#	prot_gly_i					
+#	prot_ser_i					
+#	ser-L_i					
+						
+##	measurements					
+						
+##	error					
